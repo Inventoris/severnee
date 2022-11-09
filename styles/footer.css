@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  justify-content: end;
+  height: 70px;
+}
+
+ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 10px 50px 10px 0;
+  padding: 0;
+}
+
+ul a {
+  display: inline-flex;
+  align-items: center;
+}
+
+li:hover {
+  text-decoration: underline dashed #77dd77;
+  text-decoration-thickness: 2px;
+}
+
+.github-link {
+  gap: 20px;
+}
