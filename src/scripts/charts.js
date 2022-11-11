@@ -1,3 +1,5 @@
+import Chart from 'chart.js/auto';
+
 Chart.defaults.font.family = 'Roboto Mono, monospace'
 Chart.defaults.font.size = 16
 Chart.defaults.color = '#000000'

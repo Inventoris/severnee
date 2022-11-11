@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "chart.js": "^3.9.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "name": "aurora",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
   }
 }
