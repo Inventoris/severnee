@@ -4,13 +4,9 @@
   <title>Прогноз северного сияния</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles/general.css">
-  <link rel="stylesheet" type="text/css" href="styles/intro.css">
-  <link rel="stylesheet" type="text/css" href="styles/forecast.css">
-  <link rel="stylesheet" type="text/css" href="styles/footer.css">
-  <link rel="stylesheet" type="text/css" href="styles/mobile-media.css">
-  <link rel="icon" type="image/x-icon " href="favicon/favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="src/styles/style.css">
+  <link rel="icon" type="image/x-icon " href="src/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="src/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
@@ -19,8 +15,8 @@
   <main>
     <div class="intro-page">
       <picture class="intro-page__picture">
-        <source srcset="/images/abstraction-small.png" media="(max-width: 1024px)">
-        <img src="/images/abstraction-large.png" alt="Абстрактный рисунок с закорючками">
+        <source srcset="src/images/abstraction-small.png" media="(max-width: 1024px)">
+        <img src="src/images/abstraction-large.png" alt="Абстрактный рисунок с закорючками">
       </picture>
       <section class="intro-page__greeting">
         <h1 class="intro-page__title">Сияет Север</h1>
@@ -33,7 +29,7 @@
       </section>
       <div class="intro-page__arrow">
         <a class="arrow__link" href="#forecast-section">
-          <img src="/images/arrow.svg">
+          <img src="src/images/arrow.svg" alt="Значок стрелки">
         </a>
       </div>
     </div>
@@ -59,7 +55,7 @@
   <footer>
     <ul>
       <a class="github-link" href="" target="_blank">
-        <img src="/images/GitHub-Mark-32px.png" loading="lazy">
+        <img src="src/images/GitHub-Mark-32px.png" loading="lazy">
         <li>GitHub</li>
       </a>
       <a class="license-link" href="" target="_blank">
@@ -67,8 +63,6 @@
       </a>
     </ul>
   </footer>
-  <script src="node_modules/chart.js/dist/chart.js"></script>
-  <script type="module" src="scripts/forecast.js"></script>
-  <script type="module" src="scripts/charts.js"></script>
+  <script type="module" src="src/scripts/index.js"></script>
 </body>
 </html>

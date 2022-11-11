@@ -1,6 +1,6 @@
-import { daysChartBuilder, monthChartBuilder } from './charts.js' // Функции для построения графиков
+import { daysChartBuilder, monthChartBuilder } from '../charts.js' // Функции для построения графиков
 
-(async () => {
+export async function threeDayForecastBuilder() {
   try {
     let response = await fetch('https://services.swpc.noaa.gov/text/3-day-forecast.txt') // Запрос трехдневного прогноза
     let textForecast = await response.text() // Ответ в текстовом формате
@@ -10,9 +10,9 @@ import { daysChartBuilder, monthChartBuilder } from './charts.js' // Функц�
   } catch (error) {
     console.log(error)
   }
-})();
+}
 
-(async () => {
+export async function monthForecastBuilder() {
   try {
     let response = await fetch('https://services.swpc.noaa.gov/text/27-day-outlook.txt')
     let textForecast = await response.text()
@@ -22,7 +22,7 @@ import { daysChartBuilder, monthChartBuilder } from './charts.js' // Функц�
   } catch (error) {
     console.log(error)
   }
-})();
+}
 
 function threeDayTablesFiller(data) {
   const firstLineOfTable = new RegExp('(00-03UT)', 'g') // Находит начало таблицы с KP-индексами
