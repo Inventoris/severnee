@@ -1,4 +1,4 @@
-import { daysChartBuilder, monthChartBuilder } from '../charts.js' // Функции для построения графиков
+import { daysChartBuilder, monthChartBuilder } from './charts.js' // Функции для построения графиков
 
 export async function threeDayForecastBuilder() {
   try {
