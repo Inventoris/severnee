@@ -7,7 +7,7 @@
     "parcel": "^2.8.0"
   },
   "name": "aurora",
-  "source": "index.html",
+  "source": "./src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
