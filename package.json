@@ -6,7 +6,7 @@
     "eslint": "^8.27.0",
     "parcel": "^2.8.0"
   },
-  "name": "aurora",
+  "name": "severnee",
   "source": "./src/index.html",
   "scripts": {
     "start": "parcel",
