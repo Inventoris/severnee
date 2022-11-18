@@ -1,4 +1,5 @@
-import { threeDayForecastBuilder, monthForecastBuilder } from './modules/forecast.js'
+const { threeDayForecastBuilder, monthForecastBuilder } = require('./modules/forecast.js')
+const { scroll } = require('./modules/scroll.js')
 
 try {
   threeDayForecastBuilder()

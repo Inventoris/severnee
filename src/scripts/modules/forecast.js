@@ -1,6 +1,6 @@
-import { daysChartBuilder, monthChartBuilder } from './charts.js' // Функции для построения графиков
+const { daysChartBuilder, monthChartBuilder } = require('./charts.js') // Функции для построения графиков
 
-export async function threeDayForecastBuilder() {
+module.exports.threeDayForecastBuilder = async () => {
   try {
     let response = await fetch('https://services.swpc.noaa.gov/text/3-day-forecast.txt') // Запрос трехдневного прогноза
     let textForecast = await response.text() // Ответ в текстовом формате
@@ -12,7 +12,7 @@ export async function threeDayForecastBuilder() {
   }
 }
 
-export async function monthForecastBuilder() {
+module.exports.monthForecastBuilder = async () => {
   try {
     let response = await fetch('https://services.swpc.noaa.gov/text/27-day-outlook.txt')
     let textForecast = await response.text()
@@ -25,21 +25,25 @@ export async function monthForecastBuilder() {
 }
 
 function threeDayTablesFiller(data) {
-  const firstLineOfTable = new RegExp('(00-03UT)', 'g') // Находит начало таблицы с KP-индексами
-  const lastLineOfTable = new RegExp('(21-00UT)', 'g') // Находит последнюю строку таблицы
-  const endOfForecastSection = new RegExp('(B[.])', 'g') // Находит конец секции A прогноза (есть две секции: A и B, нужна только A)
+  const startOfForecastTable = new RegExp('(00-03UT)', 'g') // Находит начало таблицы с KP-индексами
+  const endOfForecastTable = new RegExp('Rationale', 'g') // Находит конец таблицы
   const extraSignatures = new RegExp('[(]G[1-5][)]', 'g') // Находит лишние подписи, как «(G1)». Они дополнительно классифицируют силу геомагнитного шторма, но из-за них меняется число символов внутри response.text(), поэтому удаляем
 
-  const indexOfFirstLine = data.search(firstLineOfTable)
-  const indexOfEnd = data.search(endOfForecastSection)
-  const crudeForecast = data.slice(indexOfFirstLine, indexOfEnd) // Вырезаем таблицу из response.text()
-  const treatedForecast = crudeForecast.replaceAll(extraSignatures, '    ') // Пробелы нужны, чтобы удалить элемент без сдвига
+  const indexOfStart = data.search(startOfForecastTable)
+  const indexOfEnd = data.search(endOfForecastTable)
+  let crudeForecast = data.slice(indexOfStart, indexOfEnd) // Вырезаем таблицу из response.text()
 
-  const indexOfLastLineOfTable = treatedForecast.search(lastLineOfTable) + 38 // Число 38 отвечает за количество символов до последнего элемента таблицы
-  const resultForecast = treatedForecast // Создаём массив из таблицы, чтобы удобнее извлекать значения KP-индексов (цифры)
-    .slice(0, indexOfLastLineOfTable)
+  if (crudeForecast.includes('G')) {
+    crudeForecast = crudeForecast.replaceAll(extraSignatures, '    ') // Пробелы нужны, чтобы удалить элемент без сдвига
+  }
+
+  const arrayFromTextForecast = crudeForecast // Создаём массив из таблицы для удобства
     .split(' ')
     .filter(item => item !== '')
+
+  const indexOfLastElementOfTable = 32 // Индекс последнего нужного элемента в массиве из таблицы прогноза
+  const resultForecast = arrayFromTextForecast
+    .slice(0, indexOfLastElementOfTable) // Вырезаем только те данные, что нужны для формирования прогноза
 
   const firstDayChartData = new Array()
   const secondDayChartData = new Array()

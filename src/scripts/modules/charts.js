@@ -9,10 +9,11 @@ Chart.defaults.plugins.tooltip.padding = 15
 Chart.defaults.plugins.tooltip.displayColors = false
 Chart.defaults.plugins.tooltip.intersect = false
 
-const isMobile = window.matchMedia('(max-width: 1024px)').matches
 let chartTitlesPadding = 15
 let chartLabelFontSize = 18
 let chartLineTension = 0.3
+
+const isMobile = window.matchMedia('(max-width: 1024px)').matches
 
 if (isMobile) {
   Chart.defaults.font.size = 12
@@ -21,7 +22,7 @@ if (isMobile) {
   chartLineTension = 0.5
 }
 
-export function daysChartBuilder(forecasts) {
+module.exports.daysChartBuilder = function (forecasts) {
   const { firstDayChartData, secondDayChartData, thirdDayChartData } = forecasts
 
   const config1 = { // Прототип конфигов для графиков
@@ -124,7 +125,7 @@ export function daysChartBuilder(forecasts) {
   }
 }
 
-export function monthChartBuilder(chartParams) {
+module.exports.monthChartBuilder = function (chartParams) {
   const { monthChartData, translatedLabels } = chartParams
 
   const config = {

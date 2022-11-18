@@ -14,27 +14,27 @@
 </head>
 <body>
   <main>
-    <div class="intro-page">
-      <picture class="intro-page__picture">
+    <div class="intro">
+      <picture class="intro__picture">
         <source srcset="./images/abstraction-small.png" media="(max-width: 1024px)">
         <img src="./images/abstraction-large.png" alt="Абстрактный рисунок с закорючками">
       </picture>
-      <section class="intro-page__greeting">
-        <h1 class="intro-page__title">Севернее</h1>
-        <h2 class="intro-page__subtitle">Узнайте прогноз северного сияния 📡</h2>
-        <p>Северное сияние видно ночью в местах без светового шума и при ясном небе.</p>
-        <p>Всё, что нужно, — приехать вовремя и выждать момент. А с «вовремя» поможет наш прогноз.</p>
+      <section class="intro__greeting">
+        <h1 class="intro__title">Севернее</h1>
+        <h2 class="intro__subtitle">Узнайте прогноз северного сияния &#128225</h2>
+        <p>Северное сияние видно ночью, в местах без светового шума и при ясном небе.</p>
+        <p>Всё, что нужно, — приехать вовремя и выждать момент, а с «вовремя» поможет наш прогноз.</p>
         <p>Он основан на KP-индексе. Чем этот индекс выше, тем ярче и красивее будет сияние. Начиная с трёх баллов и при ясном небе можно смело отправляться на «охоту».</p>
         <p>Актуально в Мурманске, Териберке и других городах севера России.</p>
-        <a href="https://travel.yandex.ru/journal/gde-v-rossii-mozhno-uvidet-severnoe-siyanie/" target="_blank"><button class="button">Подробнее</button></a>
-      </section>
-      <div class="intro-page__arrow">
-        <a class="arrow__link" href="#forecast-section">
-          <img src="./images/arrow.svg" alt="Значок стрелки">
+        <a class="intro__button-link" href="https://travel.yandex.ru/journal/gde-v-rossii-mozhno-uvidet-severnoe-siyanie/" target="_blank">
+          <button class="intro__button">Подробнее</button>
         </a>
+      </section>
+      <div class="intro__arrow">
+        <img src="./images/arrow.svg" alt="Значок стрелки вниз">
       </div>
     </div>
-    <section id="forecast-section">
+    <section class="forecast">
       <h1 class="forecast__tree-day-title">Прогноз KP-индексов на <span class="days-accent">3 дня</span></h1>
       <h2 class="forecast_tree-day-subtitle">*Тап по графику или наведение курсора откроют подсказки</h2>
       <div class="forecast__wrapper">
@@ -47,7 +47,7 @@
         <div class="forecast__chart-wrapper">
           <canvas id="third-day-chart" title="График прогноза северного сияния на послезавтра"></canvas>
       </div>
-      <h1 class="forecast__month-title">Общий прогноз KP-индексов на <span class="days-accent">27 дней</span></h1>
+      <h1 class="forecast__month-title">Прогноз KP-индексов на <span class="days-accent">27 дней</span></h1>
       <div class="forecast__chart-wrapper">
         <canvas id="month-chart" title="График прогноза северного сияния на 27 дней"></canvas>
       </div>
@@ -56,7 +56,7 @@
   <footer>
     <ul>
       <a class="github-link" href="https://github.com/Severnee" target="_blank">
-        <img src="./images/GitHub-Mark-32px.png" loading="lazy">
+        <img src="./images/GitHub-Mark-32px.svg" loading="lazy">
         <li>GitHub</li>
       </a>
       <a class="license-link" href="https://github.com/Severnee/sources" target="_blank">

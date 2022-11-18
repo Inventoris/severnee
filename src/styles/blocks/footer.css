@@ -17,11 +17,25 @@ ul a {
   align-items: center;
 }
 
-li:hover {
-  text-decoration: underline dashed #77dd77;
+li {
+  font-size: 20px;
+  text-decoration: underline solid transparent;
   text-decoration-thickness: 2px;
+  text-underline-offset: 0.1em;
+  transition: text-decoration-color 0.1s;
+}
+
+li:hover {
+  text-decoration: underline solid #77dd77;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.1em;
+  transition: text-decoration-color 0.1s;
 }
 
 .github-link {
-  gap: 20px;
+  gap: 15px;
+}
+
+.github-link > img {
+  width: 30px;
 }
