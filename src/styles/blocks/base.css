@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+  --base-font-size: 20px;
+  --color-grey: #ebebeb;
+  --color-black: #000000;
+  --color-light-black: #414141;
+  --color-white: #FFFFFF;
+  --block-border-radius: 10px;
+  --button-border-radius: 6px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 150px 0 250px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * 1.2);
+  text-align: center;
+}
+
+h2 {
+  font-size: calc(var(--base-font-size) * 1.1);
+  padding: 15px;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+li:hover {
+  text-shadow: 0 0 var(--color-black);
+}
+
+.button {
+  font-size: calc(var(--base-font-size) * .8);
+  border: none;
+  border-radius: var(--button-border-radius);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 10px 25px;
+  transition: background-color .1s linear;
+  user-select: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-light-black);
+}
+
+.nav-link {
+  user-select: none;
+}
+
+@media (max-width: 1024px)  {
+  main {
+    margin: 20px 0 150px;
+  }
+
+  h1 {
+    font-size: calc(var(--base-font-size) * 1.1);
+  }
+
+  h2 {
+    font-size: calc(var(--base-font-size));
+  }
+}

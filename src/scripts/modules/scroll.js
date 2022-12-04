@@ -1,6 +1,8 @@
-const arrow = document.querySelector('.intro__arrow')
-const forecastSection = document.querySelector('.forecast')
+const navLinks = document.querySelectorAll('.nav-link')
 
-arrow.addEventListener('click', () => {
-  forecastSection.scrollIntoView()
-})
+navLinks.forEach(link => link.addEventListener('click', (event) => {
+  event.preventDefault()
+  const scrollTarget = document.querySelector(link.hash)
+
+  scrollTarget.scrollIntoView()
+}))

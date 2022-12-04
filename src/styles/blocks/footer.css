@@ -4,32 +4,16 @@ footer {
   height: 70px;
 }
 
-ul {
+.footer-links {
   display: flex;
   gap: 60px;
-  list-style: none;
-  margin: 10px 50px 10px 0;
+  margin-right: 50px;
   padding: 0;
 }
 
-ul a {
+.footer-links a {
   display: inline-flex;
   align-items: center;
-}
-
-li {
-  font-size: 20px;
-  text-decoration: underline solid transparent;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.1em;
-  transition: text-decoration-color 0.1s;
-}
-
-li:hover {
-  text-decoration: underline solid #77dd77;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.1em;
-  transition: text-decoration-color 0.1s;
 }
 
 .github-link {
@@ -38,4 +22,22 @@ li:hover {
 
 .github-link > img {
   width: 30px;
+}
+
+@media (max-width: 1024px)  {
+  footer {
+    justify-content: center;
+  }
+
+  ul {
+    margin: 10px 0;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .github-link > img {
+    width: initial;
+  }
 }

@@ -1,27 +1,5 @@
-.forecast__tree-day-title {
-  padding: 15px;
-  margin: 0 0 10px 0;
-}
-.forecast_tree-day-subtitle {
-  font-size: 16px;
-  margin: 0;
-}
-
-.forecast__month-title {
-  margin: 0;
-}
-
-.forecast__tree-day-title,
-.forecast_tree-day-subtitle,
-.forecast__month-title {
-  text-align: center;
-  font-weight: 400;
-}
-
-.days-accent {
-  background-color: #77dd77;
-  border-radius: 5px;
-  padding: 7px 10px;
+.forecast {
+  margin: 100px 0 150px;
 }
 
 .forecast__wrapper {
@@ -29,10 +7,21 @@
   flex-direction: column;
   align-items: center;
   gap: 100px;
-  margin: 100px auto;
+  margin: 0 auto;
   max-width: 900px;
 }
 
 .forecast__chart-wrapper {
   width: 100%;
+}
+
+@media (max-width: 1024px)  {
+  .forecast {
+    margin: 100px 0;
+  }
+
+  .forecast__wrapper {
+    max-width: 700px;
+    gap: 90px;
+  }
 }

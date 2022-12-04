@@ -3,7 +3,7 @@
   "license": " AGPL-3.0",
   "name": "severnee",
   "description": "Код проекта Севернее",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "source": "./src/index.html",
   "repository": {
     "type": "git",

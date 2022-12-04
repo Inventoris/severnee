@@ -1,23 +1,27 @@
 import Chart from 'chart.js/auto'
 
 Chart.defaults.font.family = 'Roboto Mono, monospace'
-Chart.defaults.font.size = 16
+Chart.defaults.font.size = 18
 Chart.defaults.color = '#000000'
 
 Chart.defaults.plugins.tooltip.titleFont = 300
 Chart.defaults.plugins.tooltip.padding = 15
+Chart.defaults.plugins.tooltip.titleFont = {size: 18}
+Chart.defaults.plugins.tooltip.bodyFont = {size: 18}
 Chart.defaults.plugins.tooltip.displayColors = false
 Chart.defaults.plugins.tooltip.intersect = false
 
 let chartTitlesPadding = 15
-let chartLabelFontSize = 18
+let chartLabelFontSize = 20
+let chartXAxisLabelFontSize = 16
 let chartLineTension = 0.3
 
 const isMobile = window.matchMedia('(max-width: 1024px)').matches
 
 if (isMobile) {
-  Chart.defaults.font.size = 12
+  Chart.defaults.font.size = 14
   chartLabelFontSize = 14
+  chartXAxisLabelFontSize = 12
   chartTitlesPadding = 5
   chartLineTension = 0.5
 }
@@ -30,11 +34,18 @@ module.exports.daysChartBuilder = function (forecasts) {
     data: {
       datasets: [{
         label: 'Сегодня',
-        data: firstDayChartData,
+        data: firstDayChartData
       }]
     },
     options: {
       plugins: {
+        tooltip: {
+          callbacks: {
+            label: function (tooltip) {
+              return `КП-индекс: ${tooltip.formattedValue}`
+            }
+          }
+        },
         legend: {
           labels: {
             font: {
@@ -46,14 +57,14 @@ module.exports.daysChartBuilder = function (forecasts) {
       elements: {
         line: {
           tension: chartLineTension,
-          backgroundColor: '#77dd77',
+          backgroundColor: '#72B063',
           borderWidth: 1,
           fill: true
         },
         point: {
           pointStyle: 'star',
           pointRadius: 3,
-          pointBorderColor: '#77dd77'
+          pointBorderColor: '#72B063'
         }
       },
       scales: {
@@ -133,7 +144,6 @@ module.exports.monthChartBuilder = function (chartParams) {
     data: {
       labels: translatedLabels,
       datasets: [{
-        label: 'Прогноз',
         data: monthChartData,
         backgroundColor: function(context) { // Добавляем раскраску в зависимости от величены KP-индекса
           const index = context.dataIndex
@@ -141,19 +151,19 @@ module.exports.monthChartBuilder = function (chartParams) {
 
           switch (true) {
             case (value === 1):
-              return '#bdecb6'
+              return '#ebebeb'
             case (value === 2):
-              return '#90ee90'
+              return '#ebebeb'
             case (value === 3):
-              return '#2fc22f'
+              return '#ace1af'
             case (value === 4):
-              return '#008000'
+              return '#72B063'
             case (value === 5):
-              return '#fcd50f'
+              return '#44663B'
             case (value === 6):
-              return '#ff9900'
+              return '#df73ff'
             case (value === 7):
-              return '#a55ac4'
+              return '#b366ff'
             case (value === 8):
               return '#8b00ff'
             case (value === 9):
@@ -167,8 +177,15 @@ module.exports.monthChartBuilder = function (chartParams) {
     },
     options: {
       plugins: {
+        tooltip: {
+          callbacks: {
+            label: function (tooltip) {
+              return `КП-индекс: ${tooltip.formattedValue}`
+            }
+          }
+        },
         legend: {
-          display: false
+          display: false,
         }
       },
       scales: {
@@ -189,6 +206,11 @@ module.exports.monthChartBuilder = function (chartParams) {
             display: true,
             text: 'Даты',
             padding: chartTitlesPadding
+          },
+          ticks: {
+            font: {
+              size: chartXAxisLabelFontSize
+            }
           }
         }
       }
