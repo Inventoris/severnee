@@ -1,6 +1,6 @@
 const { monthChartBuilder } = require('./charts.js') // Функции для построения графиков
 
-module.exports.monthForecastBuilder = async () => {
+module.exports.monthForecastBuilder = (async () => {
   try {
     let response = await fetch('https://services.swpc.noaa.gov/text/27-day-outlook.txt')
     let textForecast = await response.text()
@@ -8,9 +8,9 @@ module.exports.monthForecastBuilder = async () => {
 
     monthChartBuilder(resultForecast)
   } catch (error) {
-    console.log(error)
+    console.log(`Ошибка в получении 27-дневного прогноза: ${error}`)
   }
-}
+})()
 
 function monthTableFiller(data) {
   const crudeForecast = data.slice(442, data.length)

@@ -1,6 +1,6 @@
 const { daysChartBuilder } = require('./charts.js') // Функции для построения графиков
 
-module.exports.threeDayForecastBuilder = async () => {
+module.exports.threeDayForecastBuilder = (async () => {
   try {
     let response = await fetch('https://services.swpc.noaa.gov/text/3-day-forecast.txt') // Запрос трехдневного прогноза
     let textForecast = await response.text() // Ответ в текстовом формате
@@ -8,13 +8,13 @@ module.exports.threeDayForecastBuilder = async () => {
 
     daysChartBuilder(resultForecast) // Рендер графика
   } catch (error) {
-    console.log(error)
+    console.log(`Ошибка в получении трёхдневного прогноза: ${error}`)
   }
-}
+})()
 
 function threeDayTablesFiller(data) {
   const startOfForecastTable = new RegExp('(00-03UT)', 'g') // Находит начало таблицы с KP-индексами
-  const endOfForecastTable = new RegExp('Rationale', 'g') // Находит конец таблицы
+  const endOfForecastTable = new RegExp('\n\nRationale', 'g') // Находит конец таблицы
   const extraSignatures = new RegExp('[(]G[1-5][)]', 'g') // Находит лишние подписи, как «(G1)». Они дополнительно классифицируют силу геомагнитного шторма, но из-за них меняется число символов внутри response.text(), поэтому удаляем
 
   const indexOfStart = data.search(startOfForecastTable)
@@ -25,13 +25,9 @@ function threeDayTablesFiller(data) {
     crudeForecast = crudeForecast.replaceAll(extraSignatures, '    ') // Пробелы нужны, чтобы удалить элемент без сдвига
   }
 
-  const arrayFromTextForecast = crudeForecast // Создаём массив из таблицы для удобства
-    .split(' ')
+  const resultForecast = crudeForecast
+    .split(' ') // Создаём массив из таблицы для удобства
     .filter(item => item !== '')
-
-  const indexOfLastElementOfTable = 32 // Индекс последнего нужного элемента в массиве из таблицы прогноза
-  const resultForecast = arrayFromTextForecast
-    .slice(0, indexOfLastElementOfTable) // Вырезаем только те данные, что нужны для формирования прогноза
 
   const firstDayChartData = new Array()
   const secondDayChartData = new Array()
@@ -49,5 +45,5 @@ function threeDayTablesFiller(data) {
     thirdDayChartData.push(Number(resultForecast[c]))
   }
 
-  return { firstDayChartData, secondDayChartData, thirdDayChartData } // Возвращаем готовые прогнозы по дням для графиков
+  return { firstDayChartData, secondDayChartData, thirdDayChartData } // Возвращаем готовые почасовые прогнозы на три дня для графиков
 }

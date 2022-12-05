@@ -132,7 +132,7 @@ module.exports.daysChartBuilder = function (forecasts) {
       config3
     )
   } catch (error) {
-    console.log(`Ошибка в рендеринге графиков на три дня: ${error}`)
+    console.log(`Ошибка рендеринга графиков на три дня: ${error}`)
   }
 }
 
@@ -223,6 +223,6 @@ module.exports.monthChartBuilder = function (chartParams) {
       config
     )
   } catch (error) {
-    console.log(`Ошибка в рендеринге графиков на 27 дней: ${error}`)
+    console.log(`Ошибка рендеринга графиков на 27 дней: ${error}`)
   }
 }
