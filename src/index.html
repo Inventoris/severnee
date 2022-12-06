@@ -90,15 +90,16 @@
         <button class="button test__button">Свернуть -</button>
         <div class="test__inner-wrapper">
           <div class="test__inner">
-            <div>
-              <p class="question">У вас будет автомобиль? 🚗</p>
+            <div class="test__questions">
+              <p class="question">У вас будет автомобиль? &#128663</p>
             </div>
             <div class="test__answers">
-              <button class="button answer-button">Да</button>
-              <button class="button answer-button">Нет</button>
+              <button class="button answer-button" id="agree">Да</button>
+              <button class="button answer-button" id="disagree">Нет</button>
             </div>
-            <div>
-              <p>0/10</p>
+            <div class="test__progress">
+              <p class="progress">1/7</p>
+              <img class="done-icon done-icon_hidden" src="./images/done.svg" alt="Значок галочки">
             </div>
           </div>
         </div>
