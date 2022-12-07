@@ -29,12 +29,12 @@ footer {
     justify-content: center;
   }
 
-  ul {
+  .footer-links {
     margin: 10px 0;
   }
 
-  li {
-    font-size: 14px;
+  .footer-links li {
+    font-size: var(--base-font-size);
   }
 
   .github-link > img {

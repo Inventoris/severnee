@@ -31,7 +31,7 @@
 }
 
 .cookie-notification__button {
-  padding: 15px 25px;
+  font-size: calc(var(--base-font-size) * .9);
 }
 
 @media (max-width: 1024px)  {
@@ -39,7 +39,6 @@
     flex-direction: column;
     gap: 10px;
     height: auto;
-    max-width: unset;
   }
 
   .cookie-notification__content {
@@ -48,6 +47,7 @@
   }
 
   .cookie-notification__button {
+    font-size: calc(var(--base-font-size) * .8);
     margin-bottom: 10px;
   }
 }

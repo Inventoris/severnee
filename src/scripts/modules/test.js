@@ -4,19 +4,21 @@ class Test {
     this.grades = grades
     this.tips = tips
     this.answers = new Object()
-    this.questionNumber = 1
+    this.questionNumber = 0 // Счётчик вопросов, начинается с нуля для правильного поиска по массиву вопросов
+    this.progressCount = 1 // Счётчик прогресса внизу теста, начинается с единицы, т.к. привычный для всех счёт начинается тоже с единицы
   }
 
   Next(question, answer, buttons, progress) {
-    this.answers[this.questionNumber - 1] = {
+    this.answers[this.questionNumber] = {
       answerType: answer
     }
 
+    this.progressCount++
     this.questionNumber++
 
-    if (this.questionNumber < 8) {
-      question.textContent = this.questions[this.questionNumber - 1]
-      progress.textContent = `${this.questionNumber}/7`
+    if (this.questionNumber < 7) {
+      question.textContent = this.questions[this.questionNumber]
+      progress.textContent = `${this.progressCount}/7`
     } else {
       this.End(question, buttons, progress)
     }
@@ -27,11 +29,11 @@ class Test {
 
     for (let answer in this.answers) {
       if (this.answers[answer].answerType === 'disagree') {
-        questionIndexes.push(answer)
+        questionIndexes.push(answer) // Подводим итог теста. Собираем индексы вопросов, где ответ был «Нет»
       }
     }
 
-    switch (true) {
+    switch (true) { // Выводим оценку
       case (questionIndexes.length === 0):
         question.textContent = this.grades[0]
         break
@@ -47,21 +49,27 @@ class Test {
     }
 
     buttons.forEach(button => button.classList.add('answer-button_hidden'))
-
-    const answersWrapper = document.querySelector('.test__answers')
-    answersWrapper.classList.add('test__answers_test-finished')
-
     progress.textContent = 'Финиш'
 
     const doneIcon = document.querySelector('.done-icon')
     doneIcon.classList.replace('done-icon_hidden', 'done-icon_visible')
+
+    if (questionIndexes.length === 0) {
+      return
+    }
+
+    const answersWrapper = document.querySelector('.test__answers')
+    answersWrapper.classList.add('test__answers_test-finished')
+
+    const testInner = document.querySelector('.test__inner')
+    testInner.classList.add('test__inner_test-finished')
 
     let answerNumber = 1
 
     for (let questionIndex of questionIndexes) {
       const newParagraph = document.createElement('p')
 
-      newParagraph.textContent = `${answerNumber}. ${this.tips[questionIndex]}`
+      newParagraph.textContent = `${answerNumber}. ${this.tips[questionIndex]}` // Индекс вопроса совпадает с индексом совета
 
       if (questionIndexes.length === 1) {
         newParagraph.textContent = this.tips[questionIndex]
@@ -70,43 +78,40 @@ class Test {
       answersWrapper.appendChild(newParagraph)
       answerNumber++
     }
-
-    const testInner = document.querySelector('.test__inner')
-    testInner.classList.add('test__inner_test-finished')
   }
 }
 
 const questions = [
-  'У вас будет автомобиль? &#128663',
-  'Уже знаете места для наблюдений за сиянием?',
-  'Прочли гайды, как сделать хорошие фотографии?',
-  'Погоду обещают ясную?',
-  'Прогноз КП-индексов хороший?',
-  'Взяли теплую одежду?',
-  'А еду и горячие напитки?'
+  'У вас будет автомобиль?',
+  'Уже выбрали места для наблюдений за сиянием?',
+  'Изучили, как сделать хорошие фотографии ночью?',
+  'Погоду обещают безоблачную?',
+  'КП-индексы в дни поездки супер?',
+  'Запаслись тёплой одеждой?',
+  'А едой и горячими напитками?'
 ]
 
 const grades = [
-  'Вы молодец, можете сами стать гидом',
-  'Неплохо, но есть над чем поработать',
-  'Вы полны энтузиазма, но подготовка хромает'
+  'Ого. Всё в порядке, можете сами стать гидом...',
+  'Неплохо, но есть над чем поработать.',
+  'Вы полны энтузиазма, но подготовка хромает.'
 ]
 
 const tips = [
-  'С машиной лучше. Можно греться и уехать от туч',
-  'Если выбрать места для наблюдений заранее, не придётся их искать посреди ночи',
-  'Приятнее, когда можно фотографировать сияние сразу, а не разбираться на месте',
-  'Даже если прогноз хороший, тучи легко перекроют вид. Стоит изучить прогноз облачности',
-  'Если КП-индексы на дни поездки низкие, это не беда. Но с высокими шансов увидеть красивое сияние больше',
-  'Без теплой одежды можно легко замерзнуть',
-  'На холоде полезно иметь согревающие напитки, вроде чая или кофе, а еда поможет не терять силы'
+  'Без машины почти никак. Можно греться, а главное уехать от внезапных туч. Лучше обзавестись',
+  'Если выбрать места для наблюдений заранее, не придётся их искать посреди кромешной тьмы',
+  'Приятнее, когда можно фотографировать сияние сразу, а не разбираться на месте. Почитайте гайды или туториалы',
+  'Даже если прогноз КП-индексов хороший, тучи легко перекроют весь вид. Планировать поездку стоит на ясные дни',
+  'Если КП-индексы на дни поездки низкие, это ещё не беда. Но с высокими шансов увидеть красивое сияние гораздо больше',
+  'Без теплой одежды можно легко замерзнуть, одевайтесь как на долгую прогулку',
+  'На холоде приятно иметь согревающие напитки, вроде чая или кофе, а еда поможет не терять силы'
 ]
 
-const test = new Test(questions, grades, tips)
+const test = new Test(questions, grades, tips) // Инстанцируем класс
 
 const question = document.querySelector('.question')
-const progress = document.querySelector('.progress')
 const buttons = document.querySelectorAll('.answer-button')
+const progress = document.querySelector('.progress')
 
 buttons.forEach(button => button.addEventListener('click', testHandler))
 
@@ -114,6 +119,6 @@ function testHandler(event) {
   const answer = event.target.id
 
   setTimeout(() => {
-    test.Next(question, answer, buttons, progress)
+    test.Next(question, answer, buttons, progress) // На клик по кнопкам запускаем метод Next с небольшой задержкой
   }, 70)
 }

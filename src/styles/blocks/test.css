@@ -122,6 +122,12 @@
   }
 
   .question {
+    padding: 0 30px;
+    height: 80px;
     text-align: center;
+  }
+
+  .test__answers_test-finished p {
+    text-align: left;
   }
 }
