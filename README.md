@@ -1,14 +1,16 @@
 # Севернее — устройство
 
-В основе проекта три графика на библиотеке [Chart.js](https://github.com/chartjs). Последний — на 27 дней — меняет цвета шкал в зависимости от величин КП-индексов.
+В основе проекта три графика на базе [Chart.js](https://github.com/chartjs). Они заполняются после обработки текстовых прогнозов КП-индексов от [NOAA](https://www.swpc.noaa.gov/) (National Oceanic and Atmospheric Administration).
 
-![image](https://user-images.githubusercontent.com/106589280/203388392-0bc7f231-480a-4b83-b02c-bce5fa795276.png)
+**Источник данных: https://services.swpc.noaa.gov/text/**
 
-Источник прогнозов — американская организация [NOAA](https://www.swpc.noaa.gov/) (National Oceanic and Atmospheric Administration). Вот как выглядит типичный бриф на 27 дней:
+Вот как выглядит типичный бриф на 27 дней:
 
-![image](https://user-images.githubusercontent.com/106589280/201693135-def63f16-b11c-4225-a3eb-f964c0533f63.png)
+![image](https://user-images.githubusercontent.com/106589280/206210556-cd21c322-9222-4195-a2e1-302c95900eef.png)
 
-Проект собирается Parcel.
+В конце страницы небольшой тест с советами для самопроверки перед путешествием.
+
+Сборка Parcel.
 
 # Как запустить
 
