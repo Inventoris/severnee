@@ -50,9 +50,7 @@ class Test {
 
     buttons.forEach(button => button.classList.add('answer-button_hidden'))
     progress.textContent = 'Финиш'
-
-    const doneIcon = document.querySelector('.done-icon')
-    doneIcon.classList.replace('done-icon_hidden', 'done-icon_visible')
+    progress.classList.add('progress-done-icon')
 
     if (questionIndexes.length === 0) {
       return

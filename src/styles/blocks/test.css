@@ -85,25 +85,18 @@
   content: '.';
 }
 
-.test__progress {
-  display: flex;
-  align-items: center;
-}
-
-.answer-button_hidden,
-.done-icon_hidden {
+.answer-button_hidden {
   display: none;
   visibility: hidden;
 }
 
-.done-icon {
+.progress-done-icon::after {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
   width: 30px;
   height: 30px;
-}
-
-.done-icon_visible {
-  display: block;
-  visibility: visible;
+  background: transparent url(../../images/done.svg);
 }
 
 @media (max-width: 1024px)  {

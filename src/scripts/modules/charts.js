@@ -3,7 +3,6 @@ import Chart from 'chart.js/auto'
 Chart.defaults.font.family = 'Roboto Mono, monospace'
 Chart.defaults.font.size = 18
 Chart.defaults.color = '#000000'
-
 Chart.defaults.plugins.tooltip.titleFont = 300
 Chart.defaults.plugins.tooltip.padding = 15
 Chart.defaults.plugins.tooltip.titleFont = {size: 18}
@@ -15,15 +14,23 @@ let chartTitlesPadding = 15
 let chartLabelFontSize = 20
 let chartXAxisLabelFontSize = 16
 let chartLineTension = 0.3
+let chartYScaleDisplay = true
+let chartAspectRatio = 2
+let chartPointRadius = 5
+let chartInteractsEvents = ['mousemove', 'mouseout']
 
 const isMobile = window.matchMedia('(max-width: 1024px)').matches
 
 if (isMobile) {
   Chart.defaults.font.size = 14
-  chartLabelFontSize = 14
+  chartLabelFontSize = 16
   chartXAxisLabelFontSize = 12
   chartTitlesPadding = 5
   chartLineTension = 0.5
+  chartYScaleDisplay = false
+  chartAspectRatio = 1.6
+  chartPointRadius = 4
+  chartInteractsEvents = ['touchstart', 'mouseout']
 }
 
 module.exports.daysChartBuilder = function (forecasts) {
@@ -34,10 +41,12 @@ module.exports.daysChartBuilder = function (forecasts) {
     data: {
       datasets: [{
         label: 'Сегодня',
-        data: firstDayChartData
+        data: firstDayChartData,
       }]
     },
     options: {
+      aspectRatio: chartAspectRatio,
+      events: chartInteractsEvents,
       plugins: {
         tooltip: {
           callbacks: {
@@ -62,15 +71,14 @@ module.exports.daysChartBuilder = function (forecasts) {
           fill: true
         },
         point: {
-          pointStyle: 'star',
-          pointRadius: 3,
-          pointBorderColor: '#72B063'
+          pointStyle: 'rect',
+          pointRadius: chartPointRadius
         }
       },
       scales: {
         y: {
           title: {
-            display: true,
+            display: chartYScaleDisplay,
             text: 'КП-индекс',
             padding: chartTitlesPadding
           },
@@ -176,6 +184,8 @@ module.exports.monthChartBuilder = function (chartParams) {
       }]
     },
     options: {
+      aspectRatio: chartAspectRatio,
+      events: chartInteractsEvents,
       plugins: {
         tooltip: {
           callbacks: {
@@ -191,7 +201,7 @@ module.exports.monthChartBuilder = function (chartParams) {
       scales: {
         y: {
           title: {
-            display: true,
+            display: chartYScaleDisplay,
             text: 'КП-индекс',
             padding: chartTitlesPadding
           },
