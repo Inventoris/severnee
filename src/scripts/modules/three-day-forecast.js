@@ -6,7 +6,7 @@ module.exports.threeDayForecastBuilder = (async () => {
     let textForecast = await response.text() // Ответ в текстовом формате
     let resultForecast = threeDayTablesFiller(textForecast) // Обработка прогнозов
 
-    daysChartBuilder(resultForecast) // Рендер графика
+    daysChartBuilder(resultForecast) // Рендер графиков
   } catch (error) {
     console.log(`Ошибка в получении трёхдневного прогноза: ${error}`)
   }
