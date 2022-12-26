@@ -13,23 +13,28 @@ module.exports.monthForecastBuilder = (async () => {
 })()
 
 function monthTableFiller(data) {
-  const crudeForecast = data.slice(442, data.length)
+  const startOfForecastTable = new RegExp('\n2[0-9]+', 'g')
+  const indexOfStart = data.search(startOfForecastTable)
+
+  const crudeForecast = data.slice(indexOfStart, data.length)
   const treatedForecast = crudeForecast
-    .split('  ')
-    .filter(item => item !== '')
+    .replaceAll(/\n+/g, '     ') // Заменяем знаки разрыва строки на 5 пробелов
+    .replaceAll(/\s{10}/g, '     ') // Заменяем места, где 10 пробелов, на 5 пробелов
+    .trim()
+    .split('     ') // Создаём массив, разбивая строку по 5 пробелов
 
   const monthChartData = new Array()
   const monthChartLabels = new Array()
 
-  for (let i = 3; i < treatedForecast.length; i += 3) {
-    monthChartData.push(Number(treatedForecast[i].slice(0, 1))) // Заполняем массив KP-индексами. Метод slice нужен, поскольку каждый элемент цикла — склеенный KP-индекс и дата.
+  for (let i = 3; i < treatedForecast.length; i += 4) {
+    monthChartData.push(Number(treatedForecast[i])) // Заполняем массив KP-индексами
   }
 
-  for (let i = 0; i <= 78; i += 3) {
-    monthChartLabels.push(treatedForecast[i].slice(7)) // Заполняем массив лейблами для графика
+  for (let i = 0; i <= 105; i += 4) {
+    monthChartLabels.push(treatedForecast[i]) // Заполняем массив лейблами для графика
   }
 
-  const MONTHS_TRANSLATOR = {
+  const MONTHS_TRANSLATION = {
     Jan: 'Янв',
     Feb: 'Фев',
     Mar: 'Мар',
@@ -44,11 +49,11 @@ function monthTableFiller(data) {
     Dec: 'Дек'
   }
 
-  const translatedLabels = monthChartLabels.map(label => {
-    const engMonth = label.slice(0, 3)
-    const ruMonth = MONTHS_TRANSLATOR[engMonth]
+  const translatedLabels = monthChartLabels.map(date => {
+    const engMonth = date.slice(5, 8)
+    const ruMonth = MONTHS_TRANSLATION[engMonth]
 
-    return label.replace(engMonth, ruMonth)
+    return date.slice(5).replace(engMonth, ruMonth) // Очищаем от года, переводим название месяца на русский язык
   })
 
   return { monthChartData, translatedLabels } // Возвращаем готовый прогноз и лейблы
