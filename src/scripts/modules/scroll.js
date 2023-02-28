@@ -1,8 +1,11 @@
 const navLinks = document.querySelectorAll('.nav-link')
 
-navLinks.forEach(link => link.addEventListener('click', (event) => {
-  event.preventDefault()
-  const scrollTarget = document.querySelector(link.hash)
+function scrollView(event) {
+  const scrollTarget = document.querySelector(event.currentTarget.hash)
 
+  event.preventDefault()
   scrollTarget.scrollIntoView()
-}))
+}
+
+
+navLinks.forEach(link => link.addEventListener('click', scrollView))

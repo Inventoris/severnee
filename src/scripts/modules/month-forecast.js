@@ -1,4 +1,4 @@
-const { monthChartBuilder } = require('./charts.js') // Функции для построения графиков
+const { monthChartBuilder } = require('./charts.js') // Функция для рендера графика
 
 module.exports.monthForecastBuilder = (async () => {
   try {
@@ -8,7 +8,7 @@ module.exports.monthForecastBuilder = (async () => {
 
     monthChartBuilder(resultForecast)
   } catch (error) {
-    console.log(`Ошибка в получении 27-дневного прогноза: ${error}`)
+    console.error(`Ошибка в обработке 27-дневного прогноза: ${error}`)
   }
 })()
 

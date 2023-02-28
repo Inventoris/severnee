@@ -1,4 +1,4 @@
-const { daysChartBuilder } = require('./charts.js') // Функции для построения графиков
+const { daysChartBuilder } = require('./charts.js') // Функция для рендера графиков
 
 module.exports.threeDayForecastBuilder = (async () => {
   try {
@@ -8,7 +8,7 @@ module.exports.threeDayForecastBuilder = (async () => {
 
     daysChartBuilder(resultForecast) // Рендер графиков
   } catch (error) {
-    console.log(`Ошибка в получении трёхдневного прогноза: ${error}`)
+    console.error(`Ошибка в получении трёхдневного прогноза: ${error}`)
   }
 })()
 
@@ -19,7 +19,7 @@ function threeDayTablesFiller(data) {
 
   const indexOfStart = data.search(startOfForecastTable)
   const indexOfEnd = data.search(endOfForecastTable)
-  let crudeForecast = data.slice(indexOfStart, indexOfEnd) // Вырезаем таблицу из response.text()
+  let crudeForecast = data.slice(indexOfStart, indexOfEnd) // Вырезаем таблицу с данными из файла
 
   if (crudeForecast.includes('G')) {
     crudeForecast = crudeForecast.replaceAll(extraSignatures, '    ') // Пробелы нужны, чтобы удалить элемент без сдвига
@@ -45,5 +45,5 @@ function threeDayTablesFiller(data) {
     thirdDayChartData.push(Number(resultForecast[c]))
   }
 
-  return { firstDayChartData, secondDayChartData, thirdDayChartData } // Возвращаем готовые почасовые прогнозы на три дня для графиков
+  return { firstDayChartData, secondDayChartData, thirdDayChartData } // Возвращаем готовые почасовые прогнозы
 }

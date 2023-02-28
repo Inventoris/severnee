@@ -36,7 +36,7 @@ if (isMobile) {
 module.exports.daysChartBuilder = function (forecasts) {
   const { firstDayChartData, secondDayChartData, thirdDayChartData } = forecasts
 
-  const config1 = { // Прототип конфигов для графиков
+  const config1 = { // Прототип конфига для графиков
     type: 'line',
     data: {
       datasets: [{
@@ -100,7 +100,7 @@ module.exports.daysChartBuilder = function (forecasts) {
     }
   }
 
-  const config2 = Object.create(config1, { // Создаём экземпляры прототипа config1 и перезаписываем data
+  const config2 = Object.create(config1, { // Создаём экземпляр основного конфига и перезаписываем data
     data: {
       writable: true,
       enumerable: true,
@@ -126,7 +126,7 @@ module.exports.daysChartBuilder = function (forecasts) {
     }
   })
 
-  try { // Рендеринг графиков на основе конфигов
+  try { // Рендеринг графиков
     new Chart(
       document.getElementById('first-day-chart'),
       config1
@@ -140,7 +140,7 @@ module.exports.daysChartBuilder = function (forecasts) {
       config3
     )
   } catch (error) {
-    console.log(`Ошибка рендеринга графиков на три дня: ${error}`)
+    console.error(`Ошибка рендеринга графиков с прогнозами на три дня: ${error}`)
   }
 }
 
@@ -233,6 +233,6 @@ module.exports.monthChartBuilder = function (chartParams) {
       config
     )
   } catch (error) {
-    console.log(`Ошибка рендеринга графиков на 27 дней: ${error}`)
+    console.error(`Ошибка рендеринга графика с прогнозом на 27 дней: ${error}`)
   }
 }

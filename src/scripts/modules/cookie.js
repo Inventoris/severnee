@@ -1,15 +1,15 @@
 (function сookieNotify(){
-  const dateOfNotification = localStorage.dateOfNotification
-  const cookieNotification = document.querySelector('.cookie-notification')
-  const cookieAgreeButton = document.querySelector('.cookie-notification__button')
-  const YEAR_DURATION = 31536000000
+  const notification = localStorage.cookieNotification
 
-  if (!dateOfNotification || dateOfNotification >= dateOfNotification + YEAR_DURATION) {
-    cookieNotification.classList.replace('notification_hidden', 'notification_visible')
+  if (!notification) {
+    const cookieBanner = document.querySelector('.cookie-notification')
+    const cookieButton = document.querySelector('.cookie-notification__button')
 
-    cookieAgreeButton.addEventListener('click', () => {
-      localStorage.setItem('dateOfNotification', new Date())
-      cookieNotification.classList.replace('notification_visible', 'notification_hidden')
-    })
+    cookieBanner.classList.replace('notification_hidden', 'notification_visible')
+
+    cookieButton.addEventListener('click', () => {
+      localStorage.setItem('cookieNotification', new Date())
+      cookieBanner.classList.replace('notification_visible', 'notification_hidden')
+    }, {once: true})
   }
 })()
