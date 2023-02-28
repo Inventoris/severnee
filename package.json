@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/severnee/sources#readme",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel --no-cache",
+    "build": "parcel build --no-cache"
   },
   "dependencies": {
     "chart.js": "^3.9.1"
