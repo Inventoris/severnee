@@ -51,7 +51,7 @@ module.exports.daysChartBuilder = function (forecasts) {
         tooltip: {
           callbacks: {
             label: function (tooltip) {
-              return `КП-индекс: ${tooltip.formattedValue}`
+              return `KP-индекс: ${tooltip.formattedValue}`
             }
           }
         },
@@ -79,7 +79,7 @@ module.exports.daysChartBuilder = function (forecasts) {
         y: {
           title: {
             display: chartYScaleDisplay,
-            text: 'КП-индекс',
+            text: 'KP-индекс',
             padding: chartTitlesPadding
           },
           beginAtZero: true,
@@ -190,7 +190,7 @@ module.exports.monthChartBuilder = function (chartParams) {
         tooltip: {
           callbacks: {
             label: function (tooltip) {
-              return `КП-индекс: ${tooltip.formattedValue}`
+              return `KP-индекс: ${tooltip.formattedValue}`
             }
           }
         },
@@ -202,7 +202,7 @@ module.exports.monthChartBuilder = function (chartParams) {
         y: {
           title: {
             display: chartYScaleDisplay,
-            text: 'КП-индекс',
+            text: 'KP-индекс',
             padding: chartTitlesPadding
           },
           beginAtZero: true,
