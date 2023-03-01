@@ -87,3 +87,13 @@
     grid-row-end: 4;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .intro__button {
+    background-color: var(--color-dark-scheme-grey);
+  }
+
+  .intro__button:hover {
+    background-color: var(--color-dark-scheme-light-grey);
+  }
+}

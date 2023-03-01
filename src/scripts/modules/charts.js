@@ -20,6 +20,7 @@ let chartPointRadius = 5
 let chartInteractsEvents = ['mousemove', 'mouseout']
 
 const isMobile = window.matchMedia('(max-width: 1024px)').matches
+const isDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
 
 if (isMobile) {
   Chart.defaults.font.size = 14
@@ -31,6 +32,11 @@ if (isMobile) {
   chartAspectRatio = 1.6
   chartPointRadius = 4
   chartInteractsEvents = ['touchstart', 'mouseout']
+}
+
+if (isDarkColorScheme) {
+  Chart.defaults.color = '#FFFFFF'
+  Chart.defaults.elements.point.backgroundColor = '#FFFFFF'
 }
 
 module.exports.daysChartBuilder = function (forecasts) {

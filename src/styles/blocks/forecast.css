@@ -27,15 +27,6 @@
     margin: 100px 0;
   }
 
-  .forecast__title::after {
-    content: '';
-    display: inline-block;
-    width: 40;
-    height: 40;
-    vertical-align: middle;
-    background: transparent url(../../images/touch.svg);
-  }
-
   .forecast__wrapper {
     max-width: 700px;
     gap: 90px;

@@ -50,6 +50,12 @@ ul {
   list-style: none;
 }
 
+li {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color .25s ease;
+}
+
 li:hover {
   text-shadow: 0 0 var(--color-black);
 }
@@ -85,5 +91,40 @@ li:hover {
 
   h2 {
     font-size: var(--base-font-size);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-dark-scheme-grey: hsl(220 7% 25%);
+    --color-dark-scheme-light-grey: hsl(222, 6%, 30%);
+  }
+
+  a {
+    color: var(--color-white);
+  }
+
+  svg {
+    fill: var(--color-dark-scheme-grey);
+    transition: fill .25s ease;
+  }
+
+  svg:hover {
+    fill: var(--color-dark-scheme-light-grey);
+  }
+
+  li:hover {
+    text-shadow: none;
+    text-decoration-color: var(--color-white);
+  }
+
+  .button:hover {
+    background-color: hsl(0, 0%, 13%);
+  }
+
+  canvas {
+    background-color: hsl(220deg 7% 25% / 10%);
+    border-radius: var(--block-border-radius);
   }
 }

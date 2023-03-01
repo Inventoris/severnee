@@ -1,7 +1,6 @@
 footer {
   display: flex;
   justify-content: end;
-  height: 70px;
 }
 
 .footer-links {
@@ -20,10 +19,6 @@ footer {
   gap: 15px;
 }
 
-.github-link > img {
-  width: 30px;
-}
-
 @media (max-width: 1024px)  {
   footer {
     justify-content: center;
@@ -35,9 +30,5 @@ footer {
 
   .footer-links li {
     font-size: var(--base-font-size);
-  }
-
-  .github-link > img {
-    width: initial;
   }
 }

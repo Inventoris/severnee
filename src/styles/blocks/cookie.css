@@ -51,3 +51,9 @@
     margin-bottom: 10px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .cookie-notification {
+    background-color: var(--color-dark-scheme-grey);
+  }
+}

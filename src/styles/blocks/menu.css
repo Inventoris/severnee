@@ -7,7 +7,7 @@ header {
 .menu__icon {
   cursor: pointer;
   user-select: none;
-  transition: transform .1s linear;
+  transition: transform .1s linear, fill .125s ease;
 }
 
 .menu__icon_active {
@@ -46,5 +46,11 @@ header {
 
   .menu__list li {
     font-size: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu__list {
+    background-color: var(--color-dark-scheme-grey);
   }
 }
