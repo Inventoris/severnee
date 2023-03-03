@@ -19,10 +19,10 @@ let chartAspectRatio = 2
 let chartPointRadius = 5
 let chartInteractsEvents = ['mousemove', 'mouseout']
 
-const isMobile = window.matchMedia('(max-width: 1024px)').matches
-const isDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+const isMobile = window.matchMedia('(max-width: 1024px)')
+const isDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
 
-if (isMobile) {
+if (isMobile.matches) {
   Chart.defaults.font.size = 14
   chartLabelFontSize = 16
   chartXAxisLabelFontSize = 12
@@ -34,10 +34,14 @@ if (isMobile) {
   chartInteractsEvents = ['touchstart', 'mouseout']
 }
 
-if (isDarkColorScheme) {
+if (isDarkColorScheme.matches) {
   Chart.defaults.color = '#FFFFFF'
   Chart.defaults.elements.point.backgroundColor = '#FFFFFF'
 }
+
+isDarkColorScheme.addEventListener('change', () => {
+  window.location.reload() // Обновить цветовую схему графиков получается лишь этим способом
+})
 
 module.exports.daysChartBuilder = function (forecasts) {
   const { firstDayChartData, secondDayChartData, thirdDayChartData } = forecasts

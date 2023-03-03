@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
   height: 150px;
@@ -27,11 +26,21 @@
 }
 
 .test__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .test__text {
-  padding: 0 50px;
+  padding: 0 80px;
+}
+
+.test__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background: url(/src/images/quiz.svg);
 }
 
 .test__button {
@@ -40,28 +49,28 @@
   margin-bottom: 10px;
 }
 
-.test__inner-wrapper {
-  padding: 0 40px;
-  background: transparent url(/src/images/test-abstraction-large.png) no-repeat 50% 20%;
-  width: 100%;
-}
-
 .test__inner {
-  border: 1px solid var(--color-black);
+  outline: 1px solid var(--color-black);
   border-radius: var(--block-border-radius);
-  max-width: 600px;
+  width: 60%;
   height: 300px;
-  margin: 80px auto;
+  margin: 30px auto 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  background-color: var(--color-white);
+  gap: 35px;
+  background-color: inherit;
+  box-shadow: 0 0 8px 0px var(--color-black);
 }
 
 .test__inner_test-finished {
   height: auto;
+}
+
+.question {
+  padding: 30px 10px 0;
+  margin: 0;
 }
 
 .test__answers {
@@ -93,9 +102,9 @@
 .progress-done-icon::after {
   content: "";
   display: inline-block;
-  vertical-align: sub;
-  width: 35px;
-  height: 30px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
   margin-left: 5px;
   background: url(/src/images/done.svg);
 }
@@ -107,18 +116,24 @@
 
   .test__text {
     text-align: initial;
+    padding: 0 20px 0 60px;
   }
 
-  .test__inner-wrapper {
-    padding: 0 40px;
-    background: transparent url(/src/images/test-abstraction-small.png) no-repeat 50% 15%;
-    width: 100%;
+  .test__text::before {
+    left: 10px;
+  }
+
+  .test__inner {
+    width: 95%;
   }
 
   .question {
-    padding: 0 30px;
     height: 80px;
     text-align: center;
+  }
+
+  .answer-button {
+    padding: 15px 30px;
   }
 
   .test__answers_test-finished p {
@@ -130,19 +145,5 @@
   .test__wrapper {
     border-color: var(--color-black);
     background: var(--color-dark-scheme-grey);
-  }
-
-  .test__inner-wrapper {
-    background-image: url(/src/images/test-abstraction-large-dark.png);
-  }
-
-  .test__inner {
-    background-color: var(--color-dark-scheme-grey);
-  }
-}
-
-@media (max-width: 1024px) and (prefers-color-scheme: dark) {
-  .test__inner-wrapper {
-    background-image: url(/src/images/test-abstraction-small-dark.png);
   }
 }

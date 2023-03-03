@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <symbol height="20" id="svg_121" viewBox="0 96 960 960" width="20" xmlns="http://www.w3.org/2000/svg">
+   <path d="m385,793l-86,-182l-181,-86l181,-86l86,-182l87,182l179,86l-180,86l-86,182zm330,103l-43,-86l-85,-43l85,-43l44,-85l42,85l85,43l-85,43l-43,86z"/>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <g id="svg_139">
+   <use fill="#ffffff" id="svg_122" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742193 0 0 0.697387 81.0612 -14.5654)" x="-1.48" xlink:href="#svg_121" y="48.71"/>
+   <rect fill="#1818e2" height="18.24" id="svg_3" stroke="#000000" stroke-opacity="0" width="18.4" x="33.18" y="41.35"/>
+   <rect fill="#1818e2" height="18.24" id="svg_5" stroke="#000000" stroke-opacity="0" width="18.4" x="33.17" y="58.87"/>
+   <rect fill="#1818e2" height="18.24" id="svg_6" stroke="#000000" stroke-opacity="0" width="18.4" x="50.48" y="58.79"/>
+   <rect fill="#1818e2" height="18.24" id="svg_8" stroke="#000000" stroke-opacity="0" width="19.89" x="68.18" y="76.16"/>
+   <rect fill="#1818e2" height="18.24" id="svg_9" stroke="#000000" stroke-opacity="0" width="18.4" x="50.48" y="76.16"/>
+   <rect fill="#1818e2" height="18.24" id="svg_13" stroke="#000000" stroke-opacity="0" width="21.02" x="67.18" y="93.81"/>
+   <rect fill="#1818e2" height="18.24" id="svg_10" stroke="#000000" stroke-opacity="0" width="21.39" x="66.81" y="111.18"/>
+   <rect fill="#1818e2" height="18.24" id="svg_17" stroke="#000000" stroke-opacity="0" width="18.4" x="87.99" y="114.44"/>
+   <rect fill="#1818e2" height="18.24" id="svg_16" stroke="#000000" stroke-opacity="0" width="18.4" x="106.06" y="114.44"/>
+   <rect fill="#1818e2" height="18.24" id="svg_15" stroke="#000000" stroke-opacity="0" width="18.4" x="106.06" y="129.74"/>
+   <rect fill="#1818e2" height="18.24" id="svg_14" stroke="#000000" stroke-opacity="0" width="18.4" x="87.99" y="129.74"/>
+   <rect fill="#1818e2" height="18.24" id="svg_21" stroke="#000000" stroke-opacity="0" width="18.4" x="123.86" y="125.67"/>
+   <rect fill="#1818e2" height="18.24" id="svg_20" stroke="#000000" stroke-opacity="0" width="18.4" x="141.93" y="125.67"/>
+   <rect fill="#1818e2" height="18.24" id="svg_19" stroke="#000000" stroke-opacity="0" width="18.4" x="141.93" y="143.04"/>
+   <rect fill="#1818e2" height="18.24" id="svg_18" stroke="#000000" stroke-opacity="0" width="18.4" x="124.34" y="143.04"/>
+   <rect fill="#1818e2" height="18.24" id="svg_22" stroke="#000000" stroke-opacity="0" width="18.4" x="196.23" y="73.06"/>
+   <rect fill="#1818e2" height="18.24" id="svg_24" stroke="#000000" stroke-opacity="0" width="18.4" x="160.06" y="125.74"/>
+   <rect fill="#1818e2" height="18.24" id="svg_25" stroke="#000000" stroke-opacity="0" width="18.4" x="142.47" y="108.41"/>
+   <rect fill="#1818e2" height="18.24" id="svg_26" stroke="#000000" stroke-opacity="0" width="18.4" x="88.03" y="147.71"/>
+   <rect fill="#1818e2" height="18.24" id="svg_31" stroke="#000000" stroke-opacity="0" width="18.4" x="160.03" y="108.32"/>
+   <rect fill="#1818e2" height="18.24" id="svg_30" stroke="#000000" stroke-opacity="0" width="18.4" x="178.18" y="108.23"/>
+   <rect fill="#1818e2" height="18.24" id="svg_28" stroke="#000000" stroke-opacity="0" width="18.4" x="196.25" y="125.2"/>
+   <rect fill="#1818e2" height="18.24" id="svg_27" stroke="#000000" stroke-opacity="0" width="18.4" x="178.18" y="125.61"/>
+   <rect fill="#1818e2" height="18.24" id="svg_33" stroke="#000000" stroke-opacity="0" width="18.4" x="178.14" y="90.83"/>
+   <rect fill="#1818e2" height="18.24" id="svg_35" stroke="#000000" stroke-opacity="0" width="18.4" x="178.14" y="73.04"/>
+   <rect fill="#1818e2" height="18.24" id="svg_37" stroke="#000000" stroke-opacity="0" width="18.4" x="196.19" y="55.23"/>
+   <rect fill="#1818e2" height="18.24" id="svg_38" stroke="#000000" stroke-opacity="0" width="18.4" x="213.92" y="55.23"/>
+   <rect fill="#1818e2" height="0" id="svg_41" stroke="#000000" stroke-opacity="0" width="0" x="95.53" y="157.33"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_42" stroke="#000000" stroke-opacity="0" width="18.4" x="33.05" y="76.37"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_43" stroke="#000000" stroke-opacity="0" width="18.4" x="48.9" y="94.16"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_44" stroke="#000000" stroke-opacity="0" width="18.4" x="33.05" y="94.16"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_45" stroke="#000000" stroke-opacity="0" width="18.4" x="48.9" y="111.53"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_46" stroke="#000000" stroke-opacity="0" width="18.4" x="48.9" y="129.11"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_47" stroke="#000000" stroke-opacity="0" width="18.4" x="69.76" y="129.11"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_48" stroke="#000000" stroke-opacity="0" width="18.4" x="57.66" y="129.11"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_49" stroke="#000000" stroke-opacity="0" width="18.4" x="33.05" y="129.11"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_50" stroke="#000000" stroke-opacity="0" width="18.4" x="106.06" y="147.72"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_51" stroke="#000000" stroke-opacity="0" width="18.4" x="196.17" y="107.39"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_52" stroke="#000000" stroke-opacity="0" width="18.4" x="214.11" y="107.39"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_53" stroke="#000000" stroke-opacity="0" width="18.4" x="178.2" y="143.17"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_54" stroke="#000000" stroke-opacity="0" width="18.4" x="213.87" y="73.06"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_55" stroke="#000000" stroke-opacity="0" width="18.4" x="69.73" y="145.04"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_56" stroke="#000000" stroke-opacity="0" width="18.4" x="69.73" y="147.72"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_57" stroke="#000000" stroke-opacity="0" width="18.61" x="141.9" y="160.96"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_58" stroke="#000000" stroke-opacity="0" width="18.4" x="51.37" y="147.31"/>
+   <rect fill="#82ba4a" height="0" id="svg_59" stroke="#000000" stroke-opacity="0" width="0" x="50.44" y="179.88"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_60" stroke="#000000" stroke-opacity="0" width="18.4" x="51.37" y="163.24"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_61" stroke="#000000" stroke-opacity="0" width="18.4" x="69.52" y="165.93"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_62" stroke="#000000" stroke-opacity="0" width="18.4" x="51.37" y="165.93"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_63" stroke="#000000" stroke-opacity="0" width="18.4" x="87.67" y="165.93"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_64" stroke="#000000" stroke-opacity="0" width="18.4" x="33.02" y="166.21"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_65" stroke="#000000" stroke-opacity="0" width="18.4" x="33.05" y="183.51"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_66" stroke="#000000" stroke-opacity="0" width="18.4" x="160.36" y="143.17"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_67" stroke="#000000" stroke-opacity="0" width="18.4" x="160.36" y="160.96"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_68" stroke="#000000" stroke-opacity="0" width="18.4" x="160.15" y="178.96"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_69" stroke="#000000" stroke-opacity="0" width="18.4" x="178.09" y="178.96"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_70" stroke="#000000" stroke-opacity="0" width="18.4" x="214.38" y="125.39"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_71" stroke="#000000" stroke-opacity="0" width="18.4" x="214.38" y="143.38"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_72" stroke="#000000" stroke-opacity="0" width="18.4" x="124.48" y="161.17"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_73" stroke="#000000" stroke-opacity="0" width="18.4" x="105.91" y="165.93"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_76" stroke="#000000" stroke-opacity="0" width="18.4" x="124.27" y="160.96"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_75" stroke="#000000" stroke-opacity="0" width="18.4" x="124.27" y="178.34"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_74" stroke="#000000" stroke-opacity="0" width="18.4" x="124.27" y="196.33"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_77" stroke="#000000" stroke-opacity="0" width="18.4" x="142" y="178.96"/>
+   <rect fill="#1818e2" height="18.24" id="svg_79" stroke="#000000" stroke-opacity="0" width="18.4" x="16.66" y="41.38"/>
+   <rect fill="#1818e2" height="18.24" id="svg_80" stroke="#000000" stroke-opacity="0" width="18.4" x="214" y="38.55"/>
+   <rect fill="#82ba4a" height="0" id="svg_89" stroke="#000000" stroke-opacity="0" width="0" x="51.11" y="197.86"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_88" stroke="#000000" stroke-opacity="0" width="18.4" x="52.04" y="181.22"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_86" stroke="#000000" stroke-opacity="0" width="18.4" x="52.04" y="183.91"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_85" stroke="#000000" stroke-opacity="0" width="18.4" x="88.33" y="183.91"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_84" stroke="#000000" stroke-opacity="0" width="18.4" x="33.68" y="183.91"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_83" stroke="#000000" stroke-opacity="0" width="18.4" x="33.09" y="201.7"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_97" stroke="#000000" stroke-opacity="0" width="18.4" x="214.31" y="161.38"/>
+   <rect fill="#1818e2" height="18.24" id="svg_102" stroke="#000000" stroke-opacity="0" width="18.4" x="195.3" y="89.27"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_103" stroke="#000000" stroke-opacity="0" width="18.4" x="178.19" y="197.03"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_104" stroke="#000000" stroke-opacity="0" width="18.4" x="196.55" y="161.25"/>
+   <rect fill="#82ba4a" height="18.24" id="svg_105" stroke="#000000" stroke-opacity="0" width="18.4" x="214.22" y="179.38"/>
+   <rect fill="#82ba4a" height="19.07" id="svg_108" stroke="#000000" stroke-opacity="0" width="18.4" x="14.5" y="147.28"/>
+   <rect fill="#1818e2" height="18.24" id="svg_109" stroke="#000000" stroke-opacity="0" width="18.4" x="142.45" y="90.88"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_111" stroke="#000000" stroke-opacity="0" width="17.77" x="178.75" y="161.23"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_112" stroke="#000000" stroke-opacity="0" width="18.4" x="196.06" y="143.32"/>
+   <rect fill="#c62bc6" height="18.24" id="svg_115" stroke="#000000" stroke-opacity="0" width="18.4" x="14.86" y="76.32"/>
+   <use fill="#ffffff" id="svg_133" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742192 0 0 0.697385 81.0614 -18.3154)" x="29.7" xlink:href="#svg_121" y="98.98"/>
+   <use fill="#ffffff" id="svg_134" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742192 0 0 0.697385 81.0614 -18.3154)" x="33.81" xlink:href="#svg_121" y="148.37"/>
+   <use fill="#ffffff" id="svg_135" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742192 0 0 0.697385 81.0614 -18.3154)" x="84.65" xlink:href="#svg_121" y="123.27"/>
+   <use fill="#ffffff" id="svg_136" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742192 0 0 0.697385 81.0614 -18.3154)" x="115.81" xlink:href="#svg_121" y="73.89"/>
+   <use fill="#ffffff" id="svg_137" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742192 0 0 0.697385 81.0614 -18.3154)" x="169.94" xlink:href="#svg_121" y="52.13"/>
+   <use fill="#ffffff" id="svg_138" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.742192 0 0 0.697385 81.0614 -18.3154)" x="-76.91" xlink:href="#svg_121" y="46.27"/>
+  </g>
+ </g>
+</svg>

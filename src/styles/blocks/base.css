@@ -50,12 +50,6 @@ ul {
   list-style: none;
 }
 
-li {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: text-decoration-color .25s ease;
-}
-
 li:hover {
   text-shadow: 0 0 var(--color-black);
 }
@@ -115,8 +109,7 @@ li:hover {
   }
 
   li:hover {
-    text-shadow: none;
-    text-decoration-color: var(--color-white);
+    text-shadow: 0 0 var(--color-white);
   }
 
   .button:hover {

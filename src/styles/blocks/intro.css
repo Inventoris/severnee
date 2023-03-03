@@ -77,11 +77,6 @@
     grid-row-end: 3;
   }
 
-  .intro__button {
-    font-size: 14px;
-    padding: 8px;
-  }
-
   .intro__arrow-icon {
     grid-row-start: 3;
     grid-row-end: 4;

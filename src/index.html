@@ -7,13 +7,8 @@
   <meta name="title" content="Прогноз северного сияния — по часам и суткам">
   <meta name="description" content="Узнайте актуальный прогноз северного сияния в Мурманске, Териберке и других городах севера России">
   <link rel="canonical" href="https://severnee.ru">
-  <link rel="stylesheet" type="text/css" href="./styles/style.css">
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-  <link type="image/png" sizes="16x16" rel="icon" href="./images/favicon-16x16.png">
-  <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-  <link type="image/png" sizes="192x192" rel="icon" href="./images/android-chrome-192x192.png">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
@@ -36,10 +31,8 @@
   <main>
     <section class="intro">
       <picture class="intro__picture">
-        <source srcset="./images/intro-abstraction-small-dark.png" media="(max-width: 1024px) and (prefers-color-scheme: dark)">
-        <source srcset="./images/intro-abstraction-small.png" media="(max-width: 1024px)">
-        <source srcset="./images/intro-abstraction-large-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="./images/intro-abstraction-large.png" alt="Абстрактный рисунок северного сияния">
+        <source srcset="images/intro-abstraction-small.svg" media="(max-width: 1024px)">
+        <img src="images/intro-abstraction-large.svg" alt="Абстрактный рисунок северного сияния">
       </picture>
       <article class="intro__content-wrapper">
         <h1 class="intro__title">Севернее</h1>
@@ -86,24 +79,22 @@
     </section>
     <section class="test" id="test-section">
       <h1 class="test__title">Самопроверка</h1>
-      <div class="test__wrapper test__wrapper_opened">
+      <div class="test__wrapper test__wrapper_closed">
         <h2 class="test__subtitle">Готовы к поездке?</h2>
-        <p class="test__text">Небольшой тест снизу поможет вам собраться в путешествие за северным сиянием и ничего не забыть. А в конце будет результат с советами.</p>
-        <button class="button test__button">Свернуть -</button>
-        <div class="test__inner-wrapper">
-          <div class="test__inner">
-            <div class="test__questions">
-              <p class="question">У вас будет автомобиль? &#128663</p>
-            </div>
-            <div class="test__answers">
-              <button class="button answer-button" id="agree">Да</button>
-              <button class="button answer-button" id="disagree">Нет</button>
-            </div>
-            <div class="test__progress">
-              <p class="progress">1/7</p>
-            </div>
+        <p class="test__text">Небольшой тест снизу поможет вам собраться в путешествие за северным сиянием и ничего не забыть.</p>
+        <button class="button test__button">Развернуть +</button>
+        <div class="test__inner">
+          <div class="test__questions">
+            <p class="question">У вас будет автомобиль? &#128663</p>
           </div>
-        </div>
+          <div class="test__answers">
+            <button class="button answer-button" id="agree">Да</button>
+            <button class="button answer-button" id="disagree">Нет</button>
+          </div>
+          <div class="test__progress">
+            <p class="progress">1/7</p>
+          </div>
+      </div>
       </div>
     </section>
   </main>
@@ -126,6 +117,6 @@
     <p class="cookie-notification__content">В работе сайта используются куки &#127850</p>
     <button class="button cookie-notification__button">Ладно</button>
   </div>
-  <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 </html>

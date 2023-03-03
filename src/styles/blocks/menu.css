@@ -20,7 +20,7 @@ header {
   right: 100px;
   top: 10px;
   margin: 0;
-  padding: 30px;
+  padding: 30px 40px;
   background-color: var(--color-grey);
   transition: opacity .1s linear, visibility .1s linear;
 }
