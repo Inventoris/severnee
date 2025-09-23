@@ -1,9 +1,9 @@
 {
-  "author": "Alexey Nikitchenko",
+  "author": "Алексей Никитченко",
   "license": " AGPL-3.0",
   "name": "severnee",
-  "description": "Код проекта Севернее",
-  "version": "3.0.0",
+  "description": "Удобный веб-прогноз северного сияния в графиках",
+  "version": "1.0",
   "source": "./src/index.html",
   "repository": {
     "type": "git",
@@ -11,12 +11,13 @@
   },
   "keywords": [
     "aurora",
-    "forecasting"
+    "forecasting",
+    "northernlights"
   ],
   "bugs": {
     "url": "https://github.com/severnee/sources/issues"
   },
-  "homepage": "https://github.com/severnee/sources#readme",
+  "homepage": "https://Inventoris.github.io/severnee/",
   "scripts": {
     "start": "parcel --no-cache",
     "build": "parcel build --no-cache"
