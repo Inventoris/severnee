@@ -24,8 +24,13 @@ main {
 }
 
 a {
-  text-decoration: none;
   color: var(--color-black);
+  text-decoration-color: transparent;
+  transition: text-decoration-color .125s linear;
+}
+
+a:hover {
+  text-decoration-color: inherit;
 }
 
 h1 {
@@ -48,10 +53,6 @@ p {
 
 ul {
   list-style: none;
-}
-
-li:hover {
-  text-shadow: 0 0 var(--color-black);
 }
 
 .button {

@@ -21,6 +21,7 @@ header {
   top: 10px;
   margin: 0;
   padding: 30px 40px;
+  border-radius: var(--block-border-radius);
   background-color: var(--color-grey);
   transition: opacity .1s linear, visibility .1s linear;
 }
