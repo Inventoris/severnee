@@ -1,1 +1,95 @@
-<!DOCTYPE html><html lang="ru"><head><title>Прогноз северного сияния — по часам и суткам</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="title" content="Прогноз северного сияния — по часам и суткам"><meta name="description" content="Узнайте актуальный прогноз северного сияния в Мурманске, Териберке и других городах севера России"><link rel="canonical" href="https://severnee.ru"><link rel="stylesheet" type="text/css" href="/severnee/index.9cbb24fd.css"><link rel="icon" href="/severnee/favicon.51eacdfe.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"></head><body> <header> <nav class="menu"> <svg class="menu__icon" height="40" width="40"><path d="M5.583 29.292v-2h28.875v2Zm0-8.292v-2h28.875v2Zm0-8.292v-2h28.875v2Z"/></svg> <ul class="menu__list menu__list_closed"> <li><a class="nav-link" href="#first-day-chart">Сегодня</a></li> <li><a class="nav-link" href="#second-day-chart">Завтра</a></li> <li><a class="nav-link" href="#third-day-chart">Послезавтра</a></li> <li><a class="nav-link" href="#month-chart-title">На 27 дней</a></li> <li><a class="nav-link" href="#test-section">Проверить себя</a></li> </ul> </nav> </header> <main> <section class="intro"> <picture class="intro__picture"> <source srcset="/severnee/intro-abstraction-small.23798dd0.svg" media="(max-width: 1024px)"> <img src="/severnee/intro-abstraction-large.6ac8df48.svg" alt="Абстрактный рисунок северного сияния"> </picture> <article class="intro__content-wrapper"> <h1 class="intro__title">Севернее</h1> <h2 class="intro__subtitle">Узнайте прогноз северного сияния &#128225</h2> <p>Северное сияние видно ночью, в местах без светового шума и при ясном небе.</p> <p>Всё, что нужно, — приехать вовремя и выждать момент, а с «вовремя» поможет наш прогноз.</p> <p>Он основан на KP-индексе. Чем этот индекс выше, тем ярче и красивее будет сияние. Начиная с трёх баллов и при ясном небе можно смело отправляться на «охоту».</p> <a href="https://journal.tinkoff.ru/aurora-borealis/" target="_blank"> <button class="button intro__button">Подробнее</button> </a> </article> <a class="intro__arrow-icon nav-link" href="#forecast-section"> <svg height="48" width="48"><path d="M24 38 12 26l2.1-2.1 9.9 9.9 9.9-9.9L36 26Zm0-12.65-12-12 2.1-2.1 9.9 9.9 9.9-9.9 2.1 2.1Z"/></svg> </a> </section> <section class="forecast" id="forecast-section"> <h1>Прогнозы</h1> <div class="forecast__wrapper"> <h2 class="forecast__tree-day-title">Прогноз KP-индексов на 3 дня</h2> <div class="forecast__chart-wrapper"> <canvas id="first-day-chart"> <p class="forecast__chart-alternative">График прогноза KP-индексов на сегодня</p> </canvas> </div> <div class="forecast__chart-wrapper"> <canvas id="second-day-chart"> <p class="forecast__chart-alternative">График прогноза KP-индексов на завтра</p> </canvas> </div> <div class="forecast__chart-wrapper"> <canvas id="third-day-chart"> <p class="forecast__chart-alternative">График прогноза KP-индексов на послезавтра</p> </canvas> </div> <h2 class="forecast__month-title" id="month-chart-title">Прогноз KP-индексов на 27 дней</h2> <div class="forecast__chart-wrapper"> <canvas id="month-chart"> <p class="forecast__chart-alternative">График прогноза KP-индексов на 27 дней</p> </canvas> </div> </div> </section> <section class="test" id="test-section"> <h1 class="test__title">Самопроверка</h1> <div class="test__wrapper test__wrapper_closed"> <h2 class="test__subtitle">Готовы к поездке?</h2> <p class="test__text">Небольшой тест снизу поможет вам собраться в путешествие за северным сиянием и ничего не забыть.</p> <button class="button test__button">Развернуть +</button> <div class="test__inner"> <div class="test__questions"> <p class="question">У вас будет автомобиль? &#128663</p> </div> <div class="test__answers"> <button class="answer-button button" id="agree">Да</button> <button class="answer-button button" id="disagree">Нет</button> </div> <div class="test__progress"> <p class="progress">1/7</p> </div> </div> </div> </section> </main> <footer> <ul class="footer-links"> <li> <a class="github-link" href="https://github.com/Severnee" target="_blank"> <svg width="24" height="24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub </a> </li> <li> <a class="license-link" href="https://github.com/severnee/sources/blob/main/LICENSE" target="_blank">Лицензии</a> </li> </ul> </footer> <div class="cookie-notification notification_hidden"> <p class="cookie-notification__content">В работе сайта используются куки &#127850</p> <button class="button cookie-notification__button">Ладно</button> </div> <script type="module" src="/severnee/index.06fec267.js"></script> </body></html>
+<!DOCTYPE html><html lang=ru><title>Прогноз северного сияния — по часам и суткам</title><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=title content="Прогноз северного сияния — по часам и суткам"><meta name=description content="Узнайте актуальный прогноз северного сияния в Мурманске, Териберке и других городах севера России"><link rel=canonical href=https://severnee.ru><link rel=stylesheet href=/severnee/severnee.893015d2.css><link rel=icon href=/severnee/favicon.9dd1ad82.svg type=image/svg+xml><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&amp;family=Roboto+Mono:wght@400&amp;display=swap" rel=stylesheet><body>
+  <header>
+    <nav class=menu>
+      <svg width=40 height=40 class=menu__icon><path d="M5.583 29.292v-2h28.875v2Zm0-8.292v-2h28.875v2Zm0-8.292v-2h28.875v2Z"/></svg>
+      
+    </nav>
+  </header>
+  <main>
+    <section class=intro>
+      <picture class=intro__picture>
+        <source srcset=/severnee/intro-abstraction-small.9295eb35.svg media="(max-width: 1024px)">
+        <img src=/severnee/intro-abstraction-large.3c1d6516.svg alt="Абстрактный рисунок северного сияния">
+      </picture>
+      <article class=intro__content-wrapper>
+        <h1 class=intro__title>Севернее</h1>
+        <h2 class=intro__subtitle>Узнайте прогноз северного сияния 📡</h2>
+        <p>Северное сияние видно ночью, в местах без светового шума и при ясном небе.</p>
+        <p>Всё, что нужно, — приехать вовремя и выждать момент, а с «вовремя» поможет наш прогноз.</p>
+        <p>Он основан на KP-индексе. Чем этот индекс выше, тем ярче и красивее будет сияние. Начиная с трёх баллов и при ясном небе можно смело отправляться на «охоту».</p>
+        <a href=https://journal.tinkoff.ru/aurora-borealis/ target=_blank>
+          <button class="button intro__button">Подробнее</button>
+        </a>
+      </article>
+      <a class="intro__arrow-icon nav-link" href=#forecast-section>
+        <svg width=48 height=48><path d="M24 38 12 26l2.1-2.1 9.9 9.9 9.9-9.9L36 26Zm0-12.65-12-12 2.1-2.1 9.9 9.9 9.9-9.9 2.1 2.1Z"/></svg>
+      </a>
+    </section>
+    <section class=forecast id=forecast-section>
+      <h1>Прогнозы</h1>
+      <div class=forecast__wrapper>
+        <h2 class=forecast__tree-day-title>Прогноз KP-индексов на 3 дня</h2>
+        <div class=forecast__chart-wrapper>
+          <canvas id=first-day-chart>
+            <p class=forecast__chart-alternative>График прогноза KP-индексов на сегодня</p>
+          </canvas>
+        </div>
+        <div class=forecast__chart-wrapper>
+          <canvas id=second-day-chart>
+            <p class=forecast__chart-alternative>График прогноза KP-индексов на завтра</p>
+          </canvas>
+        </div>
+        <div class=forecast__chart-wrapper>
+          <canvas id=third-day-chart>
+            <p class=forecast__chart-alternative>График прогноза KP-индексов на послезавтра</p>
+          </canvas>
+        </div>
+        <h2 class=forecast__month-title id=month-chart-title>Прогноз KP-индексов на 27 дней</h2>
+        <div class=forecast__chart-wrapper>
+          <canvas id=month-chart>
+            <p class=forecast__chart-alternative>График прогноза KP-индексов на 27 дней</p>
+          </canvas>
+        </div>
+      </div>
+    </section>
+    <section class=test id=test-section>
+      <h1 class=test__title>Самопроверка</h1>
+      <div class="test__wrapper test__wrapper_closed">
+        <h2 class=test__subtitle>Готовы к поездке?</h2>
+        <p class=test__text>Небольшой тест снизу поможет вам собраться в путешествие за северным сиянием и ничего не забыть.</p>
+        <button class="button test__button">Развернуть +</button>
+        <div class=test__inner>
+          <div class=test__questions>
+            <p class=question>У вас будет автомобиль? 🚗</p>
+          </div>
+          <div class=test__answers>
+            <button class="answer-button button" id=agree>Да</button>
+            <button class="answer-button button" id=disagree>Нет</button>
+          </div>
+          <div class=test__progress>
+            <p class=progress>1/7</p>
+          </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul class=footer-links>
+      <li>
+        <a class=github-link href=https://github.com/Severnee target=_blank>
+          <svg width=24 height=24 viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.5 11.5 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a class=license-link href=https://github.com/severnee/sources/blob/main/LICENSE target=_blank>Лицензии</a>
+      </li>
+    </ul>
+  </footer>
+  <div class="cookie-notification notification_hidden">
+    <p class=cookie-notification__content>В работе сайта используются куки 🍪</p>
+    <button class="button cookie-notification__button">Ладно</button>
+  </div>
+  <script type=module src=/severnee/severnee.b0c01219.js></script>
+
+
