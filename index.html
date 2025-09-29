@@ -1,7 +1,7 @@
-<!DOCTYPE html><html lang=ru><title>Прогноз северного сияния — по часам и суткам</title><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=title content="Прогноз северного сияния — по часам и суткам"><meta name=description content="Узнайте актуальный прогноз северного сияния в Мурманске, Териберке и других городах севера России"><link rel=canonical href=https://inventoris.github.io/severnee/><link rel=stylesheet href=/severnee/severnee.62cd54d2.css><link rel=icon href=/severnee/favicon.9dd1ad82.svg type=image/svg+xml><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;family=Roboto+Mono:wght@400&amp;display=swap" rel=stylesheet><body>
+<!DOCTYPE html><html lang=ru><title>Прогноз северного сияния — по часам и суткам</title><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=title content="Прогноз северного сияния — по часам и суткам"><meta name=description content="Узнайте актуальный прогноз северного сияния в Мурманске, Териберке и других городах севера России"><link rel=canonical href=https://inventoris.github.io/severnee/><link rel=stylesheet href=/severnee/severnee.3cabbd91.css><link rel=icon href=/severnee/favicon.9dd1ad82.svg type=image/svg+xml><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&amp;family=Roboto+Mono:wght@400&amp;display=swap" rel=stylesheet><body>
   
   <header class=header>
-    <button class=header__menu-button>
+    <button class=header__menu-button aria-label="Открыть/закрыть меню">
       <svg width=36 height=36 viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
     <nav class="header__menu header__menu_closed">
@@ -10,7 +10,7 @@
         <li class=menu-list__item><a class="menu-list__link select-none" href=#second-day-chart>На завтра</a></li>
         <li class=menu-list__item><a class="menu-list__link select-none" href=#third-day-chart>На послезавтра</a></li>
         <li class=menu-list__item><a class="menu-list__link select-none" href=#month-chart-title>На 27 дней</a></li>
-        <li class=menu-list__item><a class="menu-list__link select-none" href=#test-section>Советы</a></li>
+        <li class=menu-list__item><a class="menu-list__link select-none" href=#test-section>Квиз</a></li>
       </ul>
     </nav>
   </header>
@@ -20,8 +20,8 @@
     
     <div class=intro>
       <picture class=intro__picture>
-        <source srcset=/severnee/intro-abstraction-small.7b3771ea.png media="(max-width: 1024px)">
-        <img class=intro__image src=/severnee/intro-abstraction-large.95773bad.png alt="Абстрактный рисунок северного сияния">
+        <source srcset=/severnee/intro-abstraction-small.60317abb.svg media="(max-width: 1024px)">
+        <img class=intro__image src=/severnee/intro-abstraction-large.38d394c2.svg alt="Абстрактный рисунок северного сияния">
       </picture>
       <section class=intro__content>
         <hgroup class=intro__header>
@@ -48,7 +48,7 @@
           Подробнее ⤳
         </a>
       </section>
-      <a class="intro__arrow-down select-none" href=#forecast-section>
+      <a class="intro__arrow-down select-none" href=#forecast-section aria-label="Переместиться к прогнозам">
         <svg width=48 height=48><path d="M24 38 12 26l2.1-2.1 9.9 9.9 9.9-9.9L36 26Zm0-12.65-12-12 2.1-2.1 9.9 9.9 9.9-9.9 2.1 2.1Z"/></svg>
       </a>
     </div>
@@ -80,9 +80,9 @@
     <section class=test id=test-section>
       <h2 class=test__title>Квиз перед путешествием</h2>
       <div class="test__wrapper test__wrapper_closed">
-        <p class=test__subtitle>Готовы к поездке? Проверьте себя, в конце советы</p>
+        <p class=test__subtitle>Готовы к поездке?</p>
         <p class=test__paragraph>
-          Этот небольшой тест поможет собраться в путешествие за северным сиянием и ничего не забыть. Собран на личном опыте.
+          Этот небольшой тест поможет собраться в путешествие за северным сиянием и ничего не забыть, в конце будут советы.
         </p>
         <button class="button test__button">Развернуть +</button>
         <div class=test__inner>
@@ -118,11 +118,11 @@
 
   
   <div class="cookie-notification notification_hidden">
-    <p class=cookie-notification__content>В работе сайта используются куки 🍪</p>
+    <span class=cookie-notification__content>В работе сайта используются куки 🍪</span>
     <button class="button cookie-notification__button">Ладно</button>
   </div>
 
-  <script type=module src=/severnee/severnee.fbe3af7f.js></script>
+  <script type=module src=/severnee/severnee.bdb1aba5.js></script>
 
 
 
