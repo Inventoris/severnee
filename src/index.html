@@ -13,14 +13,14 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&family=Roboto+Mono:wght@400&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
   <!-- Шапка -->
   <header class="header">
-    <button class="header__menu-button">
+    <button class="header__menu-button" aria-label="Открыть/закрыть меню">
       <svg width="36" height="36" viewBox="0 0 24 24">
         <path d="M4 6H20M4 12H20M4 18H20" stroke-width="1.5" stroke-linecap="round"
           stroke-linejoin="round" />
@@ -32,7 +32,7 @@
         <li class="menu-list__item"><a class="menu-list__link select-none" href="#second-day-chart">На завтра</a></li>
         <li class="menu-list__item"><a class="menu-list__link select-none" href="#third-day-chart">На послезавтра</a></li>
         <li class="menu-list__item"><a class="menu-list__link select-none" href="#month-chart-title">На 27 дней</a></li>
-        <li class="menu-list__item"><a class="menu-list__link select-none" href="#test-section">Советы</a></li>
+        <li class="menu-list__item"><a class="menu-list__link select-none" href="#test-section">Квиз</a></li>
       </ul>
     </nav>
   </header>
@@ -42,8 +42,8 @@
     <!-- Вводная часть -->
     <div class="intro">
       <picture class="intro__picture">
-        <source srcset="images/intro-abstraction-small.png" media="(max-width: 1024px)">
-        <img class="intro__image" src="images/intro-abstraction-large.png" alt="Абстрактный рисунок северного сияния">
+        <source srcset="images/intro-abstraction-small.svg" media="(max-width: 1024px)">
+        <img class="intro__image" src="images/intro-abstraction-large.svg" alt="Абстрактный рисунок северного сияния">
       </picture>
       <section class="intro__content">
         <hgroup class="intro__header">
@@ -70,7 +70,7 @@
           Подробнее &#10547;
         </a>
       </section>
-      <a class="intro__arrow-down select-none" href="#forecast-section">
+      <a class="intro__arrow-down select-none" href="#forecast-section" aria-label="Переместиться к прогнозам">
         <svg height="48" width="48">
           <path d="M24 38 12 26l2.1-2.1 9.9 9.9 9.9-9.9L36 26Zm0-12.65-12-12 2.1-2.1 9.9 9.9 9.9-9.9 2.1 2.1Z">
         </svg>
@@ -104,9 +104,9 @@
     <section class="test" id="test-section">
       <h2 class="test__title">Квиз перед путешествием</h2>
       <div class="test__wrapper test__wrapper_closed">
-        <p class="test__subtitle">Готовы к поездке? Проверьте себя, в конце советы</p>
+        <p class="test__subtitle">Готовы к поездке?</p>
         <p class="test__paragraph">
-          Этот небольшой тест поможет собраться в путешествие за северным сиянием и ничего не забыть. Собран на личном опыте.
+          Этот небольшой тест поможет собраться в путешествие за северным сиянием и ничего не забыть, в конце будут советы.
         </p>
         <button class="test__button button">Развернуть +</button>
         <div class="test__inner">
@@ -146,7 +146,7 @@
 
   <!-- Куки-баннер -->
   <div class="cookie-notification notification_hidden">
-    <p class="cookie-notification__content">В работе сайта используются куки &#127850</p>
+    <span class="cookie-notification__content">В работе сайта используются куки &#127850</span>
     <button class="button cookie-notification__button">Ладно</button>
   </div>
 

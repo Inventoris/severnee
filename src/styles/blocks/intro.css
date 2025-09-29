@@ -24,6 +24,7 @@
 }
 
 .intro__image {
+  width: 100%;
   max-width: 380px;
 }
 
@@ -86,7 +87,7 @@
   }
 
   .intro__image {
-    max-width: auto;
+    max-width: 300px;
   }
 
   .intro__content {

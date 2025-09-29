@@ -96,8 +96,8 @@
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-left: 5px;
   background: url(/src/images/done.svg) no-repeat center / contain;
 }

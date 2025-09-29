@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<svg width="350" height="350" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" shape-rendering="crispEdges">
+  <g transform="translate(13,25) scale(1.5)">
+   <defs>
+    <symbol height="20" id="svg_121" viewBox="0 96 960 960" width="20" xmlns="http://www.w3.org/2000/svg">
+     <path d="m385,793l-86,-182l-181,-86l181,-86l86,-182l87,182l179,86l-180,86l-86,182zm330,103l-43,-86l-85,-43l85,-43l44,-85l42,85l85,43l-85,43l-43,86z"/>
+    </symbol>
+   </defs>
+   <g class="layer">
+    <g id="svg_139">
+
+     <!-- Синие кубики -->
+     <rect fill="#1818e2" height="18" width="18" x="18" y="18"/>
+     <rect fill="#1818e2" height="18" width="18" x="18" y="36"/>
+     <rect fill="#1818e2" height="18" width="18" x="36" y="36"/>
+     <rect fill="#1818e2" height="18" width="18" x="54" y="54"/>
+     <rect fill="#1818e2" height="18" width="18" x="36" y="54"/>
+     <rect fill="#1818e2" height="18" width="18" x="54" y="72"/>
+     <rect fill="#1818e2" height="18" width="18" x="54" y="90"/>
+     <rect fill="#1818e2" height="18" width="18" x="72" y="90"/>
+     <rect fill="#1818e2" height="18" width="18" x="90" y="90"/>
+     <rect fill="#1818e2" height="18" width="18" x="90" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="72" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="108" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="126"/>
+     <rect fill="#1818e2" height="18" width="18" x="108" y="126"/>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="54"/>
+     <rect fill="#1818e2" height="18" width="18" x="144" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="90"/>
+     <rect fill="#1818e2" height="18" width="18" x="72" y="126"/>
+     <rect fill="#1818e2" height="18" width="18" x="144" y="90"/>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="90"/>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="108"/>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="72"/>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="54"/>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="36"/>
+     <rect fill="#1818e2" height="18" width="18" x="198" y="36"/>
+     <rect fill="#1818e2" height="18" width="18" x="0" y="18"/>
+     <rect fill="#1818e2" height="18" width="18" x="198" y="36"/>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="72"/>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="72"/>
+  
+     <!-- Фиолетовые кубики -->
+     <rect fill="#c62bc6" height="18" width="18" x="18" y="54"/>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="72"/>
+     <rect fill="#c62bc6" height="18" width="18" x="18" y="72"/>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="90"/>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="108"/>
+     <rect fill="#c62bc6" height="18" width="18" x="54" y="108"/>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="108"/>
+     <rect fill="#c62bc6" height="18" width="18" x="90" y="126"/>
+     <rect fill="#c62bc6" height="18" width="18" x="180" y="90"/>
+     <rect fill="#c62bc6" height="18" width="18" x="198" y="90"/>
+     <rect fill="#c62bc6" height="18" width="18" x="162" y="126"/>
+     <rect fill="#c62bc6" height="18" width="18" x="198" y="54"/>
+     <rect fill="#c62bc6" height="18" width="18" x="54" y="126"/>
+     <rect fill="#c62bc6" height="18" width="18" x="126" y="144"/>
+     <rect fill="#c62bc6" height="18" width="18" x="162" y="144"/>
+     <rect fill="#c62bc6" height="18" width="18" x="180" y="126"/>
+     <rect fill="#c62bc6" height="18" width="18" x="0" y="54"/>
+  
+     <!-- Зеленые кубики -->
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="126"/>
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="54" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="72" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="144" y="126"/>
+     <rect fill="#82ba4a" height="18" width="18" x="144" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="144" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="162" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="108"/>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="126"/>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="90" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="180"/>
+     <rect fill="#82ba4a" height="18" width="18" x="126" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="72" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="180"/>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="162" y="180"/>
+     <rect fill="#82ba4a" height="18" width="18" x="180" y="144"/>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="162"/>
+     <rect fill="#82ba4a" height="18" width="18" x="0" y="126"/>
+  
+      <!-- Звёздочки -->
+      <use xlink:href="#svg_121" x="30" y="1" width="20" height="20" fill="#ffffff"/>
+      <use xlink:href="#svg_121" x="64" y="34" width="20" height="20" fill="#ffffff"/>
+      <use xlink:href="#svg_121" x="85" y="54" width="20" height="20" fill="#ffffff"/>
+      <use xlink:href="#svg_121" x="116" y="34" width="20" height="20" fill="#ffffff"/>
+      <use xlink:href="#svg_121" x="170" y="12" width="20" height="20" fill="#ffffff"/>
+    </g>
+   </g>
+  </g>
+</svg>

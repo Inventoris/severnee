@@ -1,0 +1,100 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" shape-rendering="crispEdges" width="500" height="500">
+ <ns0:defs>
+  <ns0:symbol height="20" id="svg_121" viewBox="0 96 960 960" width="20">
+   <ns0:path d="m385,793l-86,-182l-181,-86l181,-86l86,-182l87,182l179,86l-180,86l-86,182zm330,103l-43,-86l-85,-43l85,-43l44,-85l42,85l85,43l-85,43l-43,86z" />
+  </ns0:symbol>
+ </ns0:defs>
+ <ns0:g class="layer">
+  <ns0:g id="svg_127">
+   <ns0:rect fill="#1818e2" height="40" id="svg_3" stroke="#000000" stroke-opacity="0" width="40" x="80" y="80" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_5" stroke="#000000" stroke-opacity="0" width="40" x="80" y="120" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_6" stroke="#000000" stroke-opacity="0" width="40" x="80" y="120" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_8" stroke="#000000" stroke-opacity="0" width="40" x="120" y="160" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_9" stroke="#000000" stroke-opacity="0" width="40" x="80" y="160" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_13" stroke="#000000" stroke-opacity="0" width="40" x="120" y="160" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_10" stroke="#000000" stroke-opacity="0" width="40" x="120" y="200" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_17" stroke="#000000" stroke-opacity="0" width="40" x="160" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_16" stroke="#000000" stroke-opacity="0" width="40" x="200" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_15" stroke="#000000" stroke-opacity="0" width="40" x="200" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_14" stroke="#000000" stroke-opacity="0" width="40" x="160" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_21" stroke="#000000" stroke-opacity="0" width="40" x="240" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_20" stroke="#000000" stroke-opacity="0" width="40" x="280" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_19" stroke="#000000" stroke-opacity="0" width="40" x="280" y="280" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_18" stroke="#000000" stroke-opacity="0" width="40" x="240" y="280" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_22" stroke="#000000" stroke-opacity="0" width="40" x="400" y="120" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_24" stroke="#000000" stroke-opacity="0" width="40" x="320" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_25" stroke="#000000" stroke-opacity="0" width="40" x="280" y="200" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_26" stroke="#000000" stroke-opacity="0" width="40" x="160" y="280" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_31" stroke="#000000" stroke-opacity="0" width="40" x="320" y="200" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_30" stroke="#000000" stroke-opacity="0" width="40" x="360" y="200" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_28" stroke="#000000" stroke-opacity="0" width="40" x="400" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_27" stroke="#000000" stroke-opacity="0" width="40" x="360" y="240" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_33" stroke="#000000" stroke-opacity="0" width="40" x="360" y="160" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_35" stroke="#000000" stroke-opacity="0" width="40" x="360" y="120" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_37" stroke="#000000" stroke-opacity="0" width="40" x="400" y="80" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_38" stroke="#000000" stroke-opacity="0" width="40" x="440" y="80" />
+   <ns0:rect fill="#1818e2" id="svg_41" stroke="#000000" stroke-opacity="0" x="200" y="320" width="40" height="40" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_42" stroke="#000000" stroke-opacity="0" width="40" x="80" y="160" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_43" stroke="#000000" stroke-opacity="0" width="40" x="80" y="160" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_44" stroke="#000000" stroke-opacity="0" width="40" x="80" y="160" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_45" stroke="#000000" stroke-opacity="0" width="40" x="80" y="200" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_46" stroke="#000000" stroke-opacity="0" width="40" x="80" y="240" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_47" stroke="#000000" stroke-opacity="0" width="40" x="120" y="240" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_48" stroke="#000000" stroke-opacity="0" width="40" x="120" y="240" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_49" stroke="#000000" stroke-opacity="0" width="40" x="80" y="240" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_50" stroke="#000000" stroke-opacity="0" width="40" x="200" y="280" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_51" stroke="#000000" stroke-opacity="0" width="40" x="400" y="200" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_52" stroke="#000000" stroke-opacity="0" width="40" x="440" y="200" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_53" stroke="#000000" stroke-opacity="0" width="40" x="360" y="280" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_54" stroke="#000000" stroke-opacity="0" width="40" x="440" y="120" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_55" stroke="#000000" stroke-opacity="0" width="40" x="120" y="280" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_56" stroke="#000000" stroke-opacity="0" width="40" x="120" y="280" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_57" stroke="#000000" stroke-opacity="0" width="40" x="280" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_58" stroke="#000000" stroke-opacity="0" width="40" x="80" y="280" />
+   <ns0:rect fill="#82ba4a" id="svg_59" stroke="#000000" stroke-opacity="0" x="80" y="360" width="40" height="40" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_60" stroke="#000000" stroke-opacity="0" width="40" x="80" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_61" stroke="#000000" stroke-opacity="0" width="40" x="120" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_62" stroke="#000000" stroke-opacity="0" width="40" x="80" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_63" stroke="#000000" stroke-opacity="0" width="40" x="160" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_64" stroke="#000000" stroke-opacity="0" width="40" x="80" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_65" stroke="#000000" stroke-opacity="0" width="40" x="80" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_66" stroke="#000000" stroke-opacity="0" width="40" x="320" y="280" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_67" stroke="#000000" stroke-opacity="0" width="40" x="320" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_68" stroke="#000000" stroke-opacity="0" width="40" x="320" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_69" stroke="#000000" stroke-opacity="0" width="40" x="360" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_70" stroke="#000000" stroke-opacity="0" width="40" x="440" y="240" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_71" stroke="#000000" stroke-opacity="0" width="40" x="440" y="280" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_72" stroke="#000000" stroke-opacity="0" width="40" x="240" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_73" stroke="#000000" stroke-opacity="0" width="40" x="200" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_76" stroke="#000000" stroke-opacity="0" width="40" x="240" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_75" stroke="#000000" stroke-opacity="0" width="40" x="240" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_74" stroke="#000000" stroke-opacity="0" width="40" x="240" y="400" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_77" stroke="#000000" stroke-opacity="0" width="40" x="280" y="360" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_79" stroke="#000000" stroke-opacity="0" width="40" x="40" y="80" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_80" stroke="#000000" stroke-opacity="0" width="40" x="440" y="80" />
+   <ns0:rect fill="#82ba4a" id="svg_89" stroke="#000000" stroke-opacity="0" x="80" y="400" width="40" height="40" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_88" stroke="#000000" stroke-opacity="0" width="40" x="120" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_86" stroke="#000000" stroke-opacity="0" width="40" x="120" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_85" stroke="#000000" stroke-opacity="0" width="40" x="160" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_84" stroke="#000000" stroke-opacity="0" width="40" x="80" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_83" stroke="#000000" stroke-opacity="0" width="40" x="80" y="400" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_97" stroke="#000000" stroke-opacity="0" width="40" x="440" y="320" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_102" stroke="#000000" stroke-opacity="0" width="40" x="400" y="160" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_103" stroke="#000000" stroke-opacity="0" width="40" x="360" y="400" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_104" stroke="#000000" stroke-opacity="0" width="40" x="400" y="320" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_105" stroke="#000000" stroke-opacity="0" width="40" x="440" y="360" />
+   <ns0:rect fill="#82ba4a" height="40" id="svg_108" stroke="#000000" stroke-opacity="0" width="40" x="40" y="280" />
+   <ns0:rect fill="#1818e2" height="40" id="svg_109" stroke="#000000" stroke-opacity="0" width="40" x="280" y="160" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_111" stroke="#000000" stroke-opacity="0" width="40" x="360" y="320" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_112" stroke="#000000" stroke-opacity="0" width="40" x="400" y="280" />
+   <ns0:rect fill="#c62bc6" height="40" id="svg_115" stroke="#000000" stroke-opacity="0" width="40" x="40" y="160" />
+  </ns0:g>
+  <ns0:use ns1:href="#svg_121" id="svg_122" x="131.48" y="57.68" width="40" height="40" fill="#ffffff"/>
+  <ns0:use ns1:href="#svg_121" id="svg_133" x="170.7" y="102.56" width="40" height="40" fill="#ffffff"/>
+  <ns0:use ns1:href="#svg_121" id="svg_134" x="190.81" y="151.96" width="40" height="40" fill="#ffffff"/>
+  <ns0:use ns1:href="#svg_121" id="svg_135" x="254.65" y="116.85" width="40" height="40" fill="#ffffff"/>
+  <ns0:use ns1:href="#svg_121" id="svg_136" x="305.81" y="77.47" width="40" height="40" fill="#ffffff"/>
+  <ns0:use ns1:href="#svg_121" id="svg_137" x="349.94" y="55.71" width="40" height="40" fill="#ffffff"/>
+  <ns0:use ns1:href="#svg_121" id="svg_138" x="246.91" y="49.85" width="40" height="40" fill="#ffffff"/>
+</ns0:g>
+</ns0:svg>
