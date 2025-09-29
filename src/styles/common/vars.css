@@ -1,0 +1,9 @@
+:root {
+  --base-font-size: 20px;
+  --block-border-radius: 12px;
+  --button-border-radius: 8px;
+  --color-grey: #EBEBEB;
+  --color-black: #000000;
+  --color-light-black: #414141;
+  --color-white: #FFFFFF;
+}

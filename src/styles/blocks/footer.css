@@ -1,33 +1,22 @@
 footer {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .footer-links {
   display: flex;
   gap: 60px;
-  margin-right: 50px;
   padding: 0;
 }
 
-.footer-links a {
+.footer-links__link {
   display: inline-flex;
   align-items: center;
-}
-
-.github-link {
   gap: 15px;
 }
 
 @media (max-width: 1024px)  {
-  footer {
-    justify-content: center;
-  }
-
-  .footer-links {
-    margin: 10px 0;
-  }
-
   .footer-links li {
     font-size: var(--base-font-size);
   }

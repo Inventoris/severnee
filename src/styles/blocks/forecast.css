@@ -1,18 +1,19 @@
 .forecast {
-  margin: 100px 0 150px;
-}
-
-.forecast__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-  margin: 0 auto;
+  margin: 300px auto 150px;
   max-width: 900px;
 }
 
-.forecast__chart-wrapper {
+.forecast__title {
+  margin-bottom: 24px;
+}
+
+.forecast__days-wrapper,
+.forecast__month-wrapper {
   width: 100%;
+}
+
+.forecast__chart {
+  margin: 56px 0;
 }
 
 .forecast__chart-alternative {
@@ -27,8 +28,7 @@
     margin: 100px 0;
   }
 
-  .forecast__wrapper {
-    max-width: 700px;
-    gap: 90px;
+  .forecast__chart {
+    margin: 72px 0;
   }
 }

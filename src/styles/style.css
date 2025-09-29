@@ -1,7 +1,10 @@
-@import "./blocks/cookie.css";
-@import "./blocks/base.css";
-@import "./blocks/menu.css";
+@import "./common/reset.css";
+@import "./common/vars.css";
+@import "./common/base.css";
+@import "./blocks/header.css";
 @import "./blocks/intro.css";
 @import "./blocks/forecast.css";
 @import "./blocks/test.css";
 @import "./blocks/footer.css";
+@import "./blocks/cookie.css";
+@import "./common/dark.css";

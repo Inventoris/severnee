@@ -1,37 +1,46 @@
 .intro {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  gap: 50px 10px;
+  row-gap: 50px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .intro__picture {
-  z-index: -1;
-  animation: endless-rotation 250s infinite;
+  animation: float 4s infinite;
 }
 
-@keyframes endless-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro__image {
+  max-width: 380px;
 }
 
-.intro__content-wrapper {
-  max-width: 70%;
+.intro__content {
+  padding: 40px 0 0 120px;
+}
+
+.intro__header {
+  margin-bottom: 36px;
 }
 
 .intro__title {
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 10px;
 }
 
 .intro__subtitle {
-  padding: 0 0 15px 0;
+  font-weight: 500
 }
 
 .intro__title,
@@ -39,21 +48,27 @@
   text-align: start;
 }
 
-.intro__button {
-  float: right;
+.intro__paragraph {
+  margin-bottom: 15px;
 }
 
-.intro__arrow-icon {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.intro__paragraph:last-of-type {
+  margin-bottom: 40px;
+}
+
+.intro__more-link {
+  float: right;
+  text-decoration: none;
+}
+
+.intro__arrow-down {
+  cursor: pointer;
+  grid-area: 2 / 1 / 3 / 3;
   transition: transform .2s ease-in;
 }
 
-.intro__arrow-icon:hover {
-  cursor: pointer;
-  transform: translateY(3px);
+.intro__arrow-down:hover {
+  transform: translateY(4px);
   transition: transform .2s ease-in-out;
 }
 
@@ -66,29 +81,20 @@
   }
 
   .intro__picture {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row: 1 / 2;
     animation: none;
   }
 
-  .intro__content-wrapper {
-    max-width: 80%;
-    grid-row-start: 2;
-    grid-row-end: 3;
+  .intro__image {
+    max-width: auto;
   }
 
-  .intro__arrow-icon {
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .intro__button {
-    background-color: var(--color-dark-scheme-grey);
+  .intro__content {
+    padding: 0;
+    grid-row: 2 / 3;
   }
 
-  .intro__button:hover {
-    background-color: var(--color-dark-scheme-light-grey);
+  .intro__arrow-down {
+    grid-row: 3 / 4;
   }
 }

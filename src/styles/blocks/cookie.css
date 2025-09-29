@@ -52,10 +52,3 @@
     font-size: calc(var(--base-font-size) * .8);
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .cookie-notification {
-    box-shadow: 0 0 5px 0 var(--color-black);
-    background-color: var(--color-dark-scheme-grey);
-  }
-}

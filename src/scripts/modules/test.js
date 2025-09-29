@@ -8,7 +8,7 @@ class Test {
     this.progressCount = 1 // Счётчик прогресса внизу теста, начинается с единицы, т.к. привычный для всех счёт начинается тоже с единицы
   }
 
-  Next(question, answer, buttons, progress) {
+  Next(question, answer, answerButtons, progress) {
     this.answers[this.questionNumber] = {
       answerType: answer
     }
@@ -20,11 +20,11 @@ class Test {
       question.textContent = this.questions[this.questionNumber]
       progress.textContent = `${this.progressCount}/7`
     } else {
-      this.End(question, buttons, progress)
+      this.End(question, answerButtons, progress)
     }
   }
 
-  End(question, buttons, progress) {
+  End(question, answerButtons, progress) {
     let questionIndexes = new Array()
 
     for (let answer in this.answers) {
@@ -48,19 +48,17 @@ class Test {
         break
     }
 
-    buttons.forEach(button => button.classList.add('answer-button_hidden'))
+    answerButtons.forEach(button => button.classList.add('test__answer_hidden'))
     progress.textContent = 'Финиш'
-    progress.classList.add('progress-done-icon')
 
     if (questionIndexes.length === 0) {
       return
     }
 
     const answersWrapper = document.querySelector('.test__answers')
-    answersWrapper.classList.add('test__answers_test-finished')
 
     const testInner = document.querySelector('.test__inner')
-    testInner.classList.add('test__inner_test-finished')
+    testInner.classList.add('test-finished')
 
     let answerNumber = 1
 
@@ -90,9 +88,9 @@ const questions = [
 ]
 
 const grades = [
-  'Ого. Всё в порядке, можете сами стать гидом...',
-  'Неплохо, но есть над чем поработать.',
-  'Вы полны энтузиазма, но подготовка хромает.'
+  'Всё в порядке, можно смело ехать. И добавить нечего.',
+  'Неплохо, но есть над чем поработать:',
+  'Вы полны энтузиазма, но подготовка хромает:'
 ]
 
 const tips = [
@@ -107,16 +105,16 @@ const tips = [
 
 const test = new Test(questions, grades, tips) // Инстанцируем класс
 
-const question = document.querySelector('.question')
-const buttons = document.querySelectorAll('.answer-button')
-const progress = document.querySelector('.progress')
+const question = document.querySelector('.test__question')
+const answerButtons = document.querySelectorAll('.test__answer')
+const progress = document.querySelector('.test__progress')
 
-buttons.forEach(button => button.addEventListener('click', testHandler))
+answerButtons.forEach(button => button.addEventListener('click', testHandler))
 
 function testHandler(event) {
   const answer = event.target.id
 
   setTimeout(() => {
-    test.Next(question, answer, buttons, progress) // На клик по кнопкам запускаем метод Next с небольшой задержкой
+    test.Next(question, answer, answerButtons, progress) // На клик по кнопкам запускаем метод Next с небольшой задержкой
   }, 70)
 }

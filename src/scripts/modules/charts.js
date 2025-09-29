@@ -25,11 +25,11 @@ const isDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
 if (isMobile.matches) {
   Chart.defaults.font.size = 14
   chartLabelFontSize = 16
-  chartXAxisLabelFontSize = 12
+  chartXAxisLabelFontSize = 14
   chartTitlesPadding = 5
   chartLineTension = 0.5
   chartYScaleDisplay = false
-  chartAspectRatio = 1.6
+  chartAspectRatio = 1
   chartPointRadius = 4
   chartInteractsEvents = ['touchstart', 'mouseout']
 }

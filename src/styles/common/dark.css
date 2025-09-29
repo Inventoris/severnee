@@ -1,0 +1,64 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-dark-scheme-grey: hsl(220, 7%, 39%);
+    --color-dark-scheme-light-grey: hsl(221, 7%, 45%);
+    --color-light-black: hsl(0, 0%, 13%);
+    --color-dark-canvas-bg: hsl(220deg 7% 25% / 10%);
+  }
+
+  a {
+    color: var(--color-white);
+  }
+
+  svg {
+    fill: var(--color-dark-scheme-grey);
+  }
+
+  svg:hover {
+    fill: var(--color-dark-scheme-light-grey);
+  }
+
+  .header__menu-button svg {
+    stroke: var(--color-dark-scheme-grey);
+  }
+
+  .header__menu-button svg:hover {
+    stroke: var(--color-dark-scheme-light-grey);;
+  }
+
+  li:hover {
+    text-shadow: 0 0 var(--color-white);
+  }
+
+  canvas {
+    background-color: var(--color-dark-canvas-bg);
+    border-radius: var(--block-border-radius);
+  }
+
+  .header__menu {
+    background-color: var(--color-dark-scheme-grey);
+  }
+
+  .intro__more-link {
+    background-color: var(--color-dark-scheme-grey);
+  }
+
+  .intro__more-link:hover {
+    background-color: var(--color-dark-scheme-light-grey);
+  }
+
+  .test__wrapper {
+    border-color: var(--color-black);
+    background: var(--color-dark-scheme-grey);
+  }
+
+  .button:hover {
+    background-color: var(--color-light-black);
+  }
+
+  .cookie-notification {
+    box-shadow: 0 0 5px 0 var(--color-black);
+    background-color: var(--color-dark-scheme-grey);
+  }
+}

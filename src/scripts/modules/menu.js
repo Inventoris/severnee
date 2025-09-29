@@ -1,15 +1,24 @@
-const menuIcon = document.querySelector('.menu__icon')
-const menuList = document.querySelector('.menu__list')
-const menuListLinks = document.querySelectorAll('.menu__list .nav-link')
+const menuButton = document.querySelector('.header__menu-button')
+const menu = document.querySelector('.header__menu')
 
-menuIcon.addEventListener('click', menuSwitcher)
-
-menuListLinks.forEach(link => {
-  link.addEventListener('click', menuSwitcher)
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('header__menu-button_clicked')
+  menu.classList.toggle('header__menu_closed')
 })
 
-function menuSwitcher() {
-  menuIcon.classList.toggle('menu__icon_active')
-  menuList.classList.toggle('menu__list_opened')
-  menuList.classList.toggle('menu__list_closed')
+const closeMenu = () => {
+  menuButton.classList.remove('header__menu-button_clicked')
+  menu.classList.add('header__menu_closed')
 }
+
+document.addEventListener('click', (event) => {
+  if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+    closeMenu()
+  }
+})
+
+menu.addEventListener('click', (event) => {
+  if (event.target.matches('.menu-list__link')) {
+    closeMenu()
+  }
+})
