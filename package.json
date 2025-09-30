@@ -23,11 +23,11 @@
     "start": "parcel --no-cache",
     "build": "parcel build --no-cache"
   },
-  "dependencies": {
-    "chart.js": "^3.9.1"
-  },
   "devDependencies": {
     "eslint": "^8.27.0",
-    "parcel": "^2.8.0"
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0"
   }
 }
