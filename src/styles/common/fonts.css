@@ -3,7 +3,6 @@
   src: url('../../fonts/NotoSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -11,7 +10,6 @@
   src: url('../../fonts/NotoSans-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +17,6 @@
   src: url('../../fonts/NotoSans-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -27,5 +24,4 @@
   src: url('../../fonts/RobotoMono-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
