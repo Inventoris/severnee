@@ -5,6 +5,7 @@
   "description": "Удобный веб-прогноз северного сияния в графиках",
   "version": "1.0",
   "source": "./src/index.html",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/severnee/sources.git"

@@ -1,5 +1,5 @@
-const menuButton = document.querySelector('.header__menu-button')
 const menu = document.querySelector('.header__menu')
+const menuButton = document.querySelector('.header__menu-button')
 
 menuButton.addEventListener('click', () => {
   menuButton.classList.toggle('header__menu-button_clicked')

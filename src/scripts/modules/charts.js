@@ -40,10 +40,10 @@ if (isDarkColorScheme.matches) {
 }
 
 isDarkColorScheme.addEventListener('change', () => {
-  window.location.reload() // Обновить цветовую схему графиков получается лишь этим способом
+  window.location.reload()
 })
 
-module.exports.daysChartBuilder = function (forecasts) {
+export function daysChartBuilder(forecasts) {
   const { firstDayChartData, secondDayChartData, thirdDayChartData } = forecasts
 
   const config1 = { // Прототип конфига для графиков
@@ -150,11 +150,11 @@ module.exports.daysChartBuilder = function (forecasts) {
       config3
     )
   } catch (error) {
-    console.error(`Ошибка рендеринга графиков с прогнозами на три дня: ${error}`)
+    console.error(`Ошибка рендеринга графиков трёхдневного прогноза: ${error}`)
   }
 }
 
-module.exports.monthChartBuilder = function (chartParams) {
+export function monthChartBuilder(chartParams) {
   const { monthChartData, translatedLabels } = chartParams
 
   const config = {
@@ -243,6 +243,6 @@ module.exports.monthChartBuilder = function (chartParams) {
       config
     )
   } catch (error) {
-    console.error(`Ошибка рендеринга графика с прогнозом на 27 дней: ${error}`)
+    console.error(`Ошибка рендеринга графика месячного прогноза: ${error}`)
   }
 }

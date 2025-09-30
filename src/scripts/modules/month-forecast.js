@@ -1,20 +1,24 @@
-const { monthChartBuilder } = require('./charts.js') // Функция для рендера графика
+import { monthChartBuilder } from './charts.js'
 
-module.exports.monthForecastBuilder = (async () => {
+(async () => {
   try {
-    let response = await fetch('https://services.swpc.noaa.gov/text/27-day-outlook.txt')
-    let textForecast = await response.text()
-    let resultForecast = monthTableFiller(textForecast)
+    const response = await fetch('https://services.swpc.noaa.gov/text/27-day-outlook.txt')
+    const textForecast = await response.text()
+    const resultForecast = monthTableFiller(textForecast)
 
     monthChartBuilder(resultForecast)
   } catch (error) {
-    console.error(`Ошибка в обработке 27-дневного прогноза: ${error}`)
+    console.error(`Ошибка в создании месячного прогноза: ${error}`)
   }
-})()
+})();
 
 function monthTableFiller(data) {
-  const startOfForecastTable = new RegExp('\n2[0-9]+', 'g')
+  const startOfForecastTable = new RegExp('\\n2[0-9]+', 'g')
   const indexOfStart = data.search(startOfForecastTable)
+
+  if (startOfForecastTable === -1) {
+    throw new Error('Не удалось найти начало таблицы месячного прогноза')
+  }
 
   const crudeForecast = data.slice(indexOfStart, data.length)
   const treatedForecast = crudeForecast
@@ -23,38 +27,31 @@ function monthTableFiller(data) {
     .trim()
     .split('     ') // Создаём массив, разбивая строку по 5 пробелов
 
-  const monthChartData = new Array()
-  const monthChartLabels = new Array()
+  const monthChartData = []
+  const monthChartLabels = []
 
   for (let i = 3; i < treatedForecast.length; i += 4) {
-    monthChartData.push(Number(treatedForecast[i])) // Заполняем массив KP-индексами
+    const value = Number(treatedForecast[i])
+
+    monthChartData.push(value)
   }
 
   for (let i = 0; i <= 105; i += 4) {
-    monthChartLabels.push(treatedForecast[i]) // Заполняем массив лейблами для графика
+    monthChartLabels.push(treatedForecast[i])
   }
 
   const MONTHS_TRANSLATION = {
-    Jan: 'Янв',
-    Feb: 'Фев',
-    Mar: 'Мар',
-    Apr: 'Апр',
-    May: 'Май',
-    Jun: 'Июн',
-    Jul: 'Июл',
-    Aug: 'Авг',
-    Sep: 'Сен',
-    Oct: 'Окт',
-    Nov: 'Ноя',
-    Dec: 'Дек'
+    Jan: 'Янв', Feb: 'Фев', Mar: 'Мар', Apr: 'Апр',
+    May: 'Май', Jun: 'Июн', Jul: 'Июл', Aug: 'Авг',
+    Sep: 'Сен', Oct: 'Окт', Nov: 'Ноя', Dec: 'Дек'
   }
 
-  const translatedLabels = monthChartLabels.map(date => {
+  const translatedLabels = monthChartLabels.map((date) => {
     const engMonth = date.slice(5, 8)
     const ruMonth = MONTHS_TRANSLATION[engMonth]
 
-    return date.slice(5).replace(engMonth, ruMonth) // Очищаем от года, переводим название месяца на русский язык
+    return date.slice(5).replace(engMonth, ruMonth)
   })
 
-  return { monthChartData, translatedLabels } // Возвращаем готовый прогноз и лейблы
+  return { monthChartData, translatedLabels }
 }

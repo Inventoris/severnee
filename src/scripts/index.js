@@ -1,7 +1,7 @@
-const { cookie } = require('./modules/cookie.js')
-const { menu } = require('./modules/menu.js')
-const { scroll} = require('./modules/scroll.js')
-const { threeDayForecastBuilder } = require('./modules/three-day-forecast.js')
-const { monthForecastBuilder } = require('./modules/month-forecast.js')
-const { testWrapperToggler } = require('./modules/test-wrapper-toggler.js')
-const { test } = require('./modules/test.js')
+import './modules/cookie.js';
+import './modules/menu.js';
+import './modules/scroll.js';
+import './modules/three-day-forecast.js';
+import './modules/month-forecast.js';
+import './modules/test-wrapper-toggler.js';
+import './modules/test.js';
