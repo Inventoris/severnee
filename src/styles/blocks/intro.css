@@ -68,9 +68,11 @@
   transition: transform .2s ease-in;
 }
 
-.intro__arrow-down:hover {
-  transform: translateY(4px);
-  transition: transform .2s ease-in-out;
+@media (min-width: 640px) {
+  .intro__arrow-down:hover {
+    transform: translateY(4px);
+    transition: transform .2s ease-in-out;
+  }
 }
 
 @media (max-width: 1024px)  {
@@ -87,7 +89,7 @@
   }
 
   .intro__image {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   .intro__content {

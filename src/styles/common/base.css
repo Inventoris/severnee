@@ -21,13 +21,28 @@ body {
 }
 
 a {
+  position: relative;
   color: var(--color-black);
-  text-decoration-color: transparent;
-  transition: text-decoration-color .125s linear;
+  text-decoration: none;
 }
 
-a:hover {
-  text-decoration-color: currentColor;
+a:not(.select-none)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: var(--button-border-radius);
+  background-color: transparent;
+  left: calc(100% + 5px);
+  top: calc(50% - 1px);
+  transition: background-color .125s ease-out;
+}
+
+@media (min-width: 640px) {
+  a:not(.select-none):hover::after {
+    background-color: var(--color-black);
+  }
 }
 
 h1 {
@@ -66,8 +81,10 @@ button {
   padding: 10px 25px;
 }
 
-.button:hover {
-  background-color: var(--color-light-black);
+@media (min-width: 640px) {
+  .button:hover {
+    background-color: var(--color-light-black);
+  }
 }
 
 svg {
@@ -84,7 +101,7 @@ svg {
     max-width: 100%;
   }
 
-  main {
+  .main {
     margin: 20px 0 150px;
   }
 

@@ -52,12 +52,13 @@
 
 @media (max-width: 1024px)  {
   .header {
+    position: relative;
     padding-top: 20px;
   }
 
   .header__menu {
-    right: 80px;
-    margin-left: 16px;
+    right: 60px;
+    left: 0;
   }
 
   .menu-list {

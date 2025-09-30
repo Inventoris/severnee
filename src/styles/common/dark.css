@@ -15,20 +15,8 @@
     fill: var(--color-dark-scheme-grey);
   }
 
-  svg:hover {
-    fill: var(--color-dark-scheme-light-grey);
-  }
-
   .header__menu-button svg {
     stroke: var(--color-dark-scheme-grey);
-  }
-
-  .header__menu-button svg:hover {
-    stroke: var(--color-dark-scheme-light-grey);;
-  }
-
-  li:hover {
-    text-shadow: 0 0 var(--color-white);
   }
 
   canvas {
@@ -44,21 +32,35 @@
     background-color: var(--color-dark-scheme-grey);
   }
 
-  .intro__more-link:hover {
-    background-color: var(--color-dark-scheme-light-grey);
-  }
-
   .test__wrapper {
     border-color: var(--color-black);
     background: var(--color-dark-scheme-grey);
   }
 
-  .button:hover {
-    background-color: var(--color-light-black);
-  }
-
   .cookie-notification {
     box-shadow: 0 0 5px 0 var(--color-black);
     background-color: var(--color-dark-scheme-grey);
+  }
+
+  @media (min-width: 640px) {
+    svg:hover {
+      fill: var(--color-dark-scheme-light-grey);
+    }
+
+    .button:hover {
+      background-color: var(--color-light-black);
+    }
+
+    .header__menu-button svg:hover {
+      stroke: var(--color-dark-scheme-light-grey);;
+    }
+
+    .intro__more-link:hover {
+      background-color: var(--color-dark-scheme-light-grey);
+    }
+
+    .footer-links__link:not(.select-none):hover::after {
+      background-color: var(--color-white);
+    }
   }
 }

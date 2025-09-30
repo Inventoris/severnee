@@ -1,96 +1,104 @@
-<?xml version="1.0"?>
-<svg width="75" height="75" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <symbol height="20" id="svg_121" viewBox="0 96 960 960" width="20" xmlns="http://www.w3.org/2000/svg">
-   <path d="m385,793l-86,-182l-181,-86l181,-86l86,-182l87,182l179,86l-180,86l-86,182zm330,103l-43,-86l-85,-43l85,-43l44,-85l42,85l85,43l-85,43l-43,86z"/>
-  </symbol>
- </defs>
- <g class="layer">
-  <rect fill="#1818e2" height="6" id="svg_3" stroke="#000000" stroke-opacity="0" width="6" x="7.38" y="10.42"/>
-  <rect fill="#1818e2" height="6" id="svg_5" stroke="#000000" stroke-opacity="0" width="6" x="7.37" y="16.18"/>
-  <rect fill="#1818e2" height="6" id="svg_6" stroke="#000000" stroke-opacity="0" width="6" x="13.02" y="16.15"/>
-  <rect fill="#1818e2" height="6" id="svg_8" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6.49" x="18.79" y="21.87"/>
-  <rect fill="#1818e2" height="6" id="svg_9" stroke="#000000" stroke-opacity="0" width="6" x="13.02" y="21.87"/>
-  <rect fill="#1818e2" height="6" id="svg_13" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6.85" x="18.47" y="27.67"/>
-  <rect fill="#1818e2" height="6" id="svg_10" stroke="#000000" stroke-opacity="0" width="6.98" x="18.35" y="33.38"/>
-  <rect fill="#1818e2" height="6" id="svg_17" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6" x="25.25" y="34.46"/>
-  <rect fill="#1818e2" height="6" id="svg_16" stroke="#000000" stroke-opacity="0" width="6" x="31.15" y="34.46"/>
-  <rect fill="#1818e2" height="6" id="svg_15" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6" x="31.15" y="39.49"/>
-  <rect fill="#1818e2" height="6" id="svg_14" stroke="#000000" stroke-opacity="0" width="6" x="25.25" y="39.49"/>
-  <rect fill="#1818e2" height="6" id="svg_21" stroke="#000000" stroke-opacity="0" width="6" x="36.95" y="38.15"/>
-  <rect fill="#1818e2" height="6" id="svg_20" stroke="#000000" stroke-opacity="0" width="6" x="42.84" y="38.15"/>
-  <rect fill="#1818e2" height="6" id="svg_19" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6" x="42.84" y="43.86"/>
-  <rect fill="#1818e2" height="6" id="svg_18" stroke="#000000" stroke-opacity="0" width="6" x="37.11" y="43.86"/>
-  <rect fill="#1818e2" height="6" id="svg_22" stroke="#000000" stroke-opacity="0" width="6" x="60.55" y="20.85"/>
-  <rect fill="#1818e2" height="6" id="svg_24" stroke="#000000" stroke-opacity="0" width="6" x="48.76" y="38.17"/>
-  <rect fill="#1818e2" height="6" id="svg_25" stroke="#000000" stroke-opacity="0" width="6" x="43.02" y="32.47"/>
-  <rect fill="#1818e2" height="6" id="svg_26" stroke="#000000" stroke-opacity="0" width="6" x="25.27" y="45.4"/>
-  <rect fill="#1818e2" height="6" id="svg_31" stroke="#000000" stroke-opacity="0" width="6" x="48.75" y="32.44"/>
-  <rect fill="#1818e2" height="6" id="svg_30" stroke="#000000" stroke-opacity="0" width="6" x="54.67" y="32.42"/>
-  <rect fill="#1818e2" height="6" id="svg_28" stroke="#000000" stroke-opacity="0" width="6" x="60.56" y="37.99"/>
-  <rect fill="#1818e2" height="6" id="svg_27" stroke="#000000" stroke-opacity="0" width="6" x="54.67" y="38.13"/>
-  <rect fill="#1818e2" height="6" id="svg_33" stroke="#000000" stroke-opacity="0" width="6" x="54.65" y="26.69"/>
-  <rect fill="#1818e2" height="6" id="svg_35" stroke="#000000" stroke-opacity="0" width="6" x="54.65" y="20.84"/>
-  <rect fill="#1818e2" height="6" id="svg_37" stroke="#000000" stroke-opacity="0" width="6" x="60.54" y="14.98"/>
-  <rect fill="#1818e2" height="6" id="svg_38" stroke="#000000" stroke-opacity="0" width="6" x="66.32" y="14.98"/>
-  <rect fill="#1818e2" height="0" id="svg_41" stroke="#000000" stroke-opacity="0" width="0" x="27.71" y="48.56"/>
-  <rect fill="#c62bc6" height="6" id="svg_42" stroke="#000000" stroke-opacity="0" width="6" x="7.34" y="21.93"/>
-  <rect fill="#c62bc6" height="6" id="svg_43" stroke="#000000" stroke-opacity="0" width="6" x="12.51" y="27.79"/>
-  <rect fill="#c62bc6" height="6" id="svg_44" stroke="#000000" stroke-opacity="0" width="6" x="7.34" y="27.79"/>
-  <rect fill="#c62bc6" height="6" id="svg_45" stroke="#000000" stroke-opacity="0" width="6" x="12.51" y="33.5"/>
-  <rect fill="#c62bc6" height="6" id="svg_46" stroke="#000000" stroke-opacity="0" width="6" x="12.51" y="39.28"/>
-  <rect fill="#c62bc6" height="6" id="svg_47" stroke="#000000" stroke-opacity="0" width="6" x="19.31" y="39.28"/>
-  <rect fill="#c62bc6" height="6" id="svg_48" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6" x="15.36" y="39.28"/>
-  <rect fill="#c62bc6" height="6" id="svg_49" stroke="#000000" stroke-opacity="0" width="6" x="7.34" y="39.28"/>
-  <rect fill="#c62bc6" height="6" id="svg_50" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6" x="31.14" y="45.4"/>
-  <rect fill="#c62bc6" height="6" id="svg_51" stroke="#000000" stroke-opacity="0" width="6" x="60.53" y="32.14"/>
-  <rect fill="#c62bc6" height="6" id="svg_52" stroke="#000000" stroke-opacity="0" width="6" x="66.38" y="32.14"/>
-  <rect fill="#c62bc6" height="6" id="svg_53" stroke="#000000" stroke-opacity="0" width="6" x="54.67" y="43.91"/>
-  <rect fill="#c62bc6" height="6" id="svg_54" stroke="#000000" stroke-opacity="0" width="6" x="66.3" y="20.85"/>
-  <rect fill="#c62bc6" height="6" id="svg_55" stroke="#000000" stroke-opacity="0" width="6" x="19.3" y="44.52"/>
-  <rect fill="#c62bc6" height="6" id="svg_56" stroke="#000000" stroke-opacity="0" width="6" x="19.3" y="45.4"/>
-  <rect fill="#c62bc6" height="6" id="svg_57" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6.07" x="42.84" y="49.76"/>
-  <rect fill="#82ba4a" height="6" id="svg_58" stroke="#000000" stroke-opacity="0" width="6" x="13.31" y="45.27"/>
-  <rect fill="#82ba4a" height="0" id="svg_59" stroke="#000000" stroke-opacity="0" width="0" x="13.01" y="55.98"/>
-  <rect fill="#82ba4a" height="6" id="svg_60" stroke="#000000" stroke-opacity="0" width="6" x="13.31" y="50.51"/>
-  <rect fill="#82ba4a" height="6" id="svg_61" stroke="#000000" stroke-opacity="0" width="6" x="19.23" y="51.39"/>
-  <rect fill="#82ba4a" height="6" id="svg_62" stroke="#000000" stroke-opacity="0" width="6" x="13.31" y="51.39"/>
-  <rect fill="#82ba4a" height="6" id="svg_63" stroke="#000000" stroke-opacity="0" width="6" x="25.15" y="51.39"/>
-  <rect fill="#82ba4a" height="6" id="svg_64" stroke="#000000" stroke-opacity="0" width="6" x="7.32" y="51.48"/>
-  <rect fill="#82ba4a" height="6" id="svg_65" stroke="#000000" stroke-opacity="0" width="6" x="7.34" y="57.17"/>
-  <rect fill="#82ba4a" height="6" id="svg_66" stroke="#000000" stroke-opacity="0" width="6" x="48.85" y="43.91"/>
-  <rect fill="#82ba4a" height="6" id="svg_67" stroke="#000000" stroke-opacity="0" width="6" x="48.85" y="49.76"/>
-  <rect fill="#82ba4a" height="6" id="svg_68" stroke="#000000" stroke-opacity="0" width="6" x="48.78" y="55.68"/>
-  <rect fill="#82ba4a" height="6" id="svg_69" stroke="#000000" stroke-opacity="0" width="6" x="54.64" y="55.68"/>
-  <rect fill="#82ba4a" height="6" id="svg_70" stroke="#000000" stroke-opacity="0" width="6" x="66.47" y="38.06"/>
-  <rect fill="#82ba4a" height="6" id="svg_71" stroke="#000000" stroke-opacity="0" width="6" x="66.47" y="43.98"/>
-  <rect fill="#82ba4a" height="6" id="svg_72" stroke="#000000" stroke-opacity="0" width="6" x="37.15" y="49.83"/>
-  <rect fill="#82ba4a" height="6" id="svg_73" stroke="#000000" stroke-opacity="0" width="6" x="31.1" y="51.39"/>
-  <rect fill="#82ba4a" height="6" id="svg_76" stroke="#000000" stroke-opacity="0" width="6" x="37.08" y="49.76"/>
-  <rect fill="#82ba4a" height="6" id="svg_75" stroke="#000000" stroke-opacity="0" width="6" x="37.08" y="55.47"/>
-  <rect fill="#82ba4a" height="6" id="svg_74" stroke="#000000" stroke-opacity="0" width="6" x="37.08" y="61.39"/>
-  <rect fill="#82ba4a" height="6" id="svg_77" stroke="#000000" stroke-opacity="0" width="6" x="42.87" y="55.68"/>
-  <rect fill="#1818e2" height="6" id="svg_79" stroke="#000000" stroke-opacity="0" width="6" x="1.99" y="10.43"/>
-  <rect fill="#1818e2" height="6" id="svg_80" stroke="#000000" stroke-opacity="0" width="6" x="66.35" y="9.5"/>
-  <rect fill="#82ba4a" height="0" id="svg_89" stroke="#000000" stroke-opacity="0" width="0" x="13.22" y="61.89"/>
-  <rect fill="#82ba4a" height="6" id="svg_88" stroke="#000000" stroke-opacity="0" width="6" x="13.53" y="56.42"/>
-  <rect fill="#82ba4a" height="6" id="svg_86" stroke="#000000" stroke-opacity="0" width="6" x="13.53" y="57.31"/>
-  <rect fill="#82ba4a" height="6" id="svg_85" stroke="#000000" stroke-opacity="0" width="6" x="25.36" y="57.31"/>
-  <rect fill="#82ba4a" height="6" id="svg_84" stroke="#000000" stroke-opacity="0" width="6" x="7.54" y="57.31"/>
-  <rect fill="#82ba4a" height="6" id="svg_83" stroke="#000000" stroke-opacity="0" width="6" x="7.35" y="63.16"/>
-  <rect fill="#82ba4a" height="6" id="svg_97" stroke="#000000" stroke-opacity="0" width="6" x="66.45" y="49.89"/>
-  <rect fill="#1818e2" height="6" id="svg_102" stroke="#000000" stroke-opacity="0" width="6" x="60.25" y="26.18"/>
-  <rect fill="#82ba4a" height="6" id="svg_103" stroke="#000000" stroke-opacity="0" width="6" x="54.67" y="61.62"/>
-  <rect fill="#82ba4a" height="6" id="svg_104" stroke="#000000" stroke-opacity="0" transform="matrix(1 0 0 1 0 0)" width="6" x="60.66" y="49.85"/>
-  <rect fill="#82ba4a" height="6" id="svg_105" stroke="#000000" stroke-opacity="0" width="6" x="66.42" y="55.82"/>
-  <rect fill="#82ba4a" height="6.27" id="svg_108" stroke="#000000" stroke-opacity="0" width="6" x="1.29" y="45.26"/>
-  <rect fill="#1818e2" height="6" id="svg_109" stroke="#000000" stroke-opacity="0" width="6" x="43.01" y="26.71"/>
-  <rect fill="#c62bc6" height="6" id="svg_111" stroke="#000000" stroke-opacity="0" width="5.8" x="54.85" y="49.85"/>
-  <rect fill="#c62bc6" height="6" id="svg_112" stroke="#000000" stroke-opacity="0" width="6" x="60.5" y="43.95"/>
-  <rect fill="#c62bc6" height="6" id="svg_115" stroke="#000000" stroke-opacity="0" width="6" x="1.4" y="21.92"/>
-  <use fill="#ffffff" id="svg_122" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.485043 0 0 0.454335 3.05833 -1.18713)" x="54.89" xlink:href="#svg_121" y="10.49"/>
-  <use fill="#ffffff" id="svg_123" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(-0.485036 -0.0025871 0.00242331 -0.454329 92.1729 41.1296)" x="86.9" xlink:href="#svg_121" y="36.14"/>
-  <use fill="#ffffff" id="svg_124" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="rotate(-179.694 20.4046 12.1763) matrix(0.485043 0 0 0.454335 -2.78583 -1.05726)" x="37.8" xlink:href="#svg_121" y="19.12"/>
-  <use fill="#ffffff" id="svg_125" stroke="#000000" stroke-opacity="0" stroke-width="20" transform="matrix(0.485043 0 0 0.454335 -2.78583 -1.05726)" x="125.35" xlink:href="#svg_121" y="3.27"/>
- </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="350"><svg width="350" height="350" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" shape-rendering="crispEdges">
+  <g transform="translate(13,25) scale(1.5)">
+   <defs>
+    <symbol height="20" id="SvgjsSymbol1012" viewBox="0 96 960 960" width="20" xmlns="http://www.w3.org/2000/svg">
+     <path d="m385,793l-86,-182l-181,-86l181,-86l86,-182l87,182l179,86l-180,86l-86,182zm330,103l-43,-86l-85,-43l85,-43l44,-85l42,85l85,43l-85,43l-43,86z"></path>
+    </symbol>
+   </defs>
+   <g class="layer">
+    <g id="SvgjsG1011">
+
+     <!-- Синие кубики -->
+     <rect fill="#1818e2" height="18" width="18" x="18" y="18"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="18" y="36"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="36" y="36"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="54" y="54"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="36" y="54"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="54" y="72"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="54" y="90"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="72" y="90"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="90" y="90"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="90" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="72" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="108" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="126"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="108" y="126"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="54"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="144" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="90"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="72" y="126"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="144" y="90"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="90"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="108"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="72"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="162" y="54"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="36"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="198" y="36"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="0" y="18"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="198" y="36"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="180" y="72"></rect>
+     <rect fill="#1818e2" height="18" width="18" x="126" y="72"></rect>
+  
+     <!-- Фиолетовые кубики -->
+     <rect fill="#c62bc6" height="18" width="18" x="18" y="54"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="72"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="18" y="72"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="90"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="108"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="54" y="108"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="36" y="108"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="90" y="126"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="180" y="90"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="198" y="90"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="162" y="126"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="198" y="54"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="54" y="126"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="126" y="144"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="162" y="144"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="180" y="126"></rect>
+     <rect fill="#c62bc6" height="18" width="18" x="0" y="54"></rect>
+  
+     <!-- Зеленые кубики -->
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="126"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="54" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="72" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="144" y="126"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="144" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="144" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="162" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="108"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="126"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="90" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="108" y="180"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="126" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="36" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="72" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="18" y="180"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="162" y="180"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="180" y="144"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="198" y="162"></rect>
+     <rect fill="#82ba4a" height="18" width="18" x="0" y="126"></rect>
+  
+      <!-- Звёздочки -->
+      <use xlink:href="#svg_121" x="30" y="1" width="20" height="20" fill="#ffffff"></use>
+      <use xlink:href="#svg_121" x="64" y="34" width="20" height="20" fill="#ffffff"></use>
+      <use xlink:href="#svg_121" x="85" y="54" width="20" height="20" fill="#ffffff"></use>
+      <use xlink:href="#svg_121" x="116" y="34" width="20" height="20" fill="#ffffff"></use>
+      <use xlink:href="#svg_121" x="170" y="12" width="20" height="20" fill="#ffffff"></use>
+    </g>
+   </g>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
