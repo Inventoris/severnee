@@ -65,4 +65,8 @@
     grid-template: auto / 1fr;
     word-break: break-word;
   }
+
+  .menu-list__item:nth-child(n) {
+    order: initial;
+  }
 }
