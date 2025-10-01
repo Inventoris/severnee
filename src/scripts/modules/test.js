@@ -1,11 +1,37 @@
+const questions = [
+  'У вас будет свой транспорт?',
+  'Уже выбрали места для наблюдений за сиянием?',
+  'Изучили, как сделать хорошие фотографии ночью?',
+  'Погоду обещают безоблачную?',
+  'KP-индексы в дни поездки 3 и выше?',
+  'Тёплая одежда с собой?',
+  'А еда и горячие напитки?'
+]
+
+const grades = [
+  'Всё в порядке, можно смело ехать. И добавить нечего.',
+  'Неплохо, но есть над чем поработать:',
+  'Вы полны энтузиазма, но подготовка хромает:'
+]
+
+const tips = [
+  'Без своего транспорта почти никак. Можно греться или уехать из под внезапных туч',
+  'Если выбрать места для наблюдений заранее, не придётся искать точку посреди кромешной тьмы',
+  'Приятнее, когда можно фотографировать сияние сразу, а не разбираться на месте в настройках. Почитайте гайды или туториалы по ночной съёмке',
+  'Даже если прогноз KP-индексов хороший, тучи легко перекроют весь вид. Планировать поездку стоит на ясные дни',
+  'Если KP-индексы на дни поездки низкие, сияние будет выглядеть как беловатые разводы в небе, а не яркие зелёные волны',
+  'Без теплой одежды можно легко замерзнуть, одевайтесь как на долгую прогулку',
+  'На холоде приятно иметь согревающие напитки, вроде чая или кофе. А еда поможет не терять силы'
+]
+
 class Test {
   constructor(questions, grades, tips) {
     this.questions = questions
     this.grades = grades
     this.tips = tips
     this.answers = new Object()
-    this.questionNumber = 0 // Счётчик вопросов, начинается с нуля для правильного поиска по массиву вопросов
-    this.progressCount = 1 // Счётчик прогресса внизу теста, начинается с единицы, т.к. привычный для всех счёт начинается тоже с единицы
+    this.questionNumber = 0
+    this.progressCount = 1
   }
 
   Next(question, answer, answerButtons, progress) {
@@ -29,11 +55,11 @@ class Test {
 
     for (let answer in this.answers) {
       if (this.answers[answer].answerType === 'disagree') {
-        questionIndexes.push(answer) // Подводим итог теста. Собираем индексы вопросов, где ответ был «Нет»
+        questionIndexes.push(answer)
       }
     }
 
-    switch (true) { // Выводим оценку
+    switch (true) {
       case (questionIndexes.length === 0):
         question.textContent = this.grades[0]
         break
@@ -65,8 +91,7 @@ class Test {
     for (let questionIndex of questionIndexes) {
       const newParagraph = document.createElement('p')
 
-      newParagraph.textContent = `${answerNumber}. ${this.tips[questionIndex]}` // Индекс вопроса совпадает с индексом совета
-
+      newParagraph.textContent = `${answerNumber}. ${this.tips[questionIndex]}`
       if (questionIndexes.length === 1) {
         newParagraph.textContent = this.tips[questionIndex]
       }
@@ -77,44 +102,18 @@ class Test {
   }
 }
 
-const questions = [
-  'У вас будет свой транспорт?',
-  'Уже выбрали места для наблюдений за сиянием?',
-  'Изучили, как сделать хорошие фотографии ночью?',
-  'Погоду обещают безоблачную?',
-  'KP-индексы в дни поездки 3 и выше?',
-  'Тёплая одежда с собой?',
-  'А еда и горячие напитки?'
-]
-
-const grades = [
-  'Всё в порядке, можно смело ехать. И добавить нечего.',
-  'Неплохо, но есть над чем поработать:',
-  'Вы полны энтузиазма, но подготовка хромает:'
-]
-
-const tips = [
-  'Без своего транспорта почти никак. Можно греться или уехать из под внезапных туч',
-  'Если выбрать места для наблюдений заранее, не придётся искать точку посреди кромешной тьмы',
-  'Приятнее, когда можно фотографировать сияние сразу, а не разбираться на месте в настройках. Почитайте гайды или туториалы по ночной съёмке',
-  'Даже если прогноз KP-индексов хороший, тучи легко перекроют весь вид. Планировать поездку стоит на ясные дни',
-  'Если KP-индексы на дни поездки низкие, сияние будет выглядеть как беловатые разводы в небе, а не яркие зелёные волны',
-  'Без теплой одежды можно легко замерзнуть, одевайтесь как на долгую прогулку',
-  'На холоде приятно иметь согревающие напитки, вроде чая или кофе. А еда поможет не терять силы'
-]
-
-const test = new Test(questions, grades, tips) // Инстанцируем класс
+const test = new Test(questions, grades, tips)
 
 const question = document.querySelector('.test__question')
 const answerButtons = document.querySelectorAll('.test__answer')
 const progress = document.querySelector('.test__progress')
 
-answerButtons.forEach(button => button.addEventListener('click', testHandler))
+answerButtons.forEach((button) => button.addEventListener('click', testHandler))
 
 function testHandler(event) {
   const answer = event.target.id
 
   setTimeout(() => {
-    test.Next(question, answer, answerButtons, progress) // На клик по кнопкам запускаем метод Next с небольшой задержкой
-  }, 70)
+    test.Next(question, answer, answerButtons, progress)
+  }, 50)
 }

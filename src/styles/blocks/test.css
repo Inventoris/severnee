@@ -23,8 +23,6 @@
 }
 
 .test__subtitle {
-  font-size: var(--base-font-size);
-  text-align: center;
   padding-top: 32px;
   margin-bottom: 100px;
 }

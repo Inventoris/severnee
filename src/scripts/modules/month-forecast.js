@@ -22,10 +22,10 @@ function monthTableFiller(data) {
 
   const crudeForecast = data.slice(indexOfStart, data.length)
   const treatedForecast = crudeForecast
-    .replaceAll(/\n+/g, '     ') // Заменяем знаки разрыва строки на 5 пробелов
+    .replaceAll(/\n+/g, '     ')    // Заменяем знаки разрыва строки на 5 пробелов
     .replaceAll(/\s{10}/g, '     ') // Заменяем места, где 10 пробелов, на 5 пробелов
     .trim()
-    .split('     ') // Создаём массив, разбивая строку по 5 пробелов
+    .split('     ')
 
   const monthChartData = []
   const monthChartLabels = []

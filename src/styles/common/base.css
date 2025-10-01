@@ -34,6 +34,7 @@ a:not(.select-none)::after {
   height: 5px;
   border-radius: var(--button-border-radius);
   background-color: transparent;
+  filter: blur(1px);
   left: calc(100% + 5px);
   top: calc(50% - 1px);
   transition: background-color .125s ease-out;
@@ -46,7 +47,7 @@ a:not(.select-none)::after {
 }
 
 h1 {
-  font-size: calc(var(--base-font-size) * 1.15);
+  font-size: calc(var(--base-font-size) * 1.2);
   font-weight: 600;
 }
 
@@ -56,12 +57,13 @@ h2 {
   font-weight: 500;
 }
 
-h3 {
+h3,
+.pseudo-heading-3 {
   font-size: calc(var(--base-font-size) * 1);
   padding-top: 12px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .pseudo-heading-3 {
   text-align: center;
 }
 
@@ -110,6 +112,11 @@ svg {
   }
 
   h2 {
-    font-size: var(--base-font-size);
+    font-size: calc(var(--base-font-size) * 1);
+  }
+
+  h3,
+  .pseudo-heading-3 {
+    font-size: calc(var(--base-font-size) * 0.95);
   }
 }

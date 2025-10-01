@@ -59,6 +59,7 @@
   .header__menu {
     right: 60px;
     left: 0;
+    padding: 16px;
   }
 
   .menu-list {
