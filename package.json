@@ -25,7 +25,8 @@
   },
   "devDependencies": {
     "eslint": "^8.27.0",
-    "parcel": "^2.16.0"
+    "parcel": "^2.16.0",
+    "parcel-reporter-static-files-copy": "^1.5.3"
   },
   "dependencies": {
     "chart.js": "^4.5.0"
