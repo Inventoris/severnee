@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://inventoris.github.io/severnee/sitemap.xml
